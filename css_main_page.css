@@ -251,4 +251,9 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+}
+
+.footer_line div{
+    font-size: 25px;
 }
