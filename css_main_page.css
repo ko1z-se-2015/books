@@ -257,3 +257,7 @@ body{
 .footer_line div{
     font-size: 25px;
 }
+.reverse:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
