@@ -294,6 +294,12 @@ a{
     .icon_text {
         font-size: 20px;
     }
+
+}
+@media screen and (max-width: 1300px ) {
+    .reverse{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 895px ) {
@@ -365,7 +371,7 @@ a{
 footer {
     position: relative;
     background-color: #f0e3ca;
-    padding: 70px 300px;
+    padding: 70px 150px;
     width: 100%;
 
     display: flex;
@@ -375,7 +381,7 @@ footer {
 .footerSection {
     display: flex;
     flex-direction: column;
-    margin: 0 50px;
+    margin: 0 10px;
 }
 
 .MainTextFooter {
