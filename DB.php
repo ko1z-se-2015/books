@@ -2,7 +2,7 @@
 $mysqli = false;
 
     global $mysqli;
-    $mysqli = mysqli_connect("localhost", "root", "root","project");
+    $mysqli = mysqli_connect("localhost", "root", "","project");
 
     if($mysqli-> connect_error){
         die("Coonect faile:" .$mysqli->connect_error);
@@ -18,22 +18,6 @@ function closeDB()
     $mysqli->close();
 }
 
-//$user = 'root';
-//$password = 'root';
-//$db = 'user';
-//$host = 'localhost';
-//$port = 3307;
-//
-//$link = mysql_connect(
-//    "$host:$port",
-//    $user,
-//    $password
-//);
-//$db_selected = mysql_select_db(
-//    $db,
-//    $link
-//);
 
-//    global $sql = mysqli_connect("localhost", "root" , "root" , "project");
 //?>
 
