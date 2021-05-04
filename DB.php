@@ -18,22 +18,6 @@ function closeDB()
     $mysqli->close();
 }
 
-//$user = 'root';
-//$password = 'root';
-//$db = 'user';
-//$host = 'localhost';
-//$port = 3307;
-//
-//$link = mysql_connect(
-//    "$host:$port",
-//    $user,
-//    $password
-//);
-//$db_selected = mysql_select_db(
-//    $db,
-//    $link
-//);
 
-//    global $sql = mysqli_connect("localhost", "root" , "root" , "project");
 //?>
 
