@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="register_login.css" rel="stylesheet">
+  <link href="css_main_page.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+</head>
+<body class="body_reg">
+<header>
+<div class="header_line2">
+      <div class="login_button"><a href="main_page.html">На главную страницу</a></div>
+</div>
+</header>
+
+<form action="/action_page.php">
+  <div class="container">
+    <br>
+    <h1>Регистрация</h1>
+    <p>Пожалуйста заполните форму</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Введите Email" name="email" id="email" required>
+
+    <label for="psw"><b>Пароль</b></label>
+    <input type="password" placeholder="Введите пароль" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Повтор пароля</b></label>
+    <input type="password" placeholder="Повторите пароль" name="psw-repeat" id="psw-repeat" required>
+    <button type="submit" ><b>Отправить</b></button>
+    <hr>
+
+  </div>
+
+  <div class="container signin">
+    <p>Создавая аккаунт вы соглашаетесь с нашими <a href="#">Условиями конфиденциальности</a>.</p>
+    <p>Уже зарегестрированы? <a href="login_page.html">Войдите</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
