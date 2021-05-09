@@ -241,6 +241,9 @@ a {
     align-items: center;
 }
 .book{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     margin: 0 30px;
     max-width: 300px;
@@ -254,6 +257,69 @@ a {
     align-items: center;
     justify-content: space-around;
     border-radius: 50px;
+}
+.img_manga{
+    max-width: 250px;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: #152644 solid 1px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+    max-width: 250px;
+    width: 100%;
+}
+.title_product{
+    font-size: 20px;
+    font-weight: bold;
+}
+.des{
+    font-size: 15px;
+}
+.price{
+    font-size: 20px;
+}
+#manga1{
+    background-image: url("icon_manga/манга 1.jpg");
+
+}
+#manga2{
+    background-image: url("icon_manga/манга 2.jpg");
+}
+#manga3{
+    background-image: url("icon_manga/манга 3.jpg");
+}
+#manga4{
+    background-image: url("icon_manga/манга 4.jpg");
+}
+#manga5{
+    background-image: url("icon_manga/манга 5.jpg");
+}
+#manga6{
+    background-image: url("icon_manga/манга 6.jpg");
+}
+#manga7{
+    background-image: url("icon_manga/манга 8.png");
+}
+#manga8{
+    background-image: url("icon_manga/манга 9.jpg");
+}
+#manga9{
+    background-image: url("icon_manga/манга 11.jpg");
+}
+#manga10{
+    background-image: url("icon_manga/манга 12.jpg");
+}
+#manga11{
+    background-image: url("icon_manga/манга 13.jpg");
+}
+#manga12{
+    background-image: url("icon_manga/манга 14.jpg");
 }
 .filter{
     max-width: 400px;
@@ -275,11 +341,32 @@ a {
     text-transform: uppercase;
     border-bottom: black solid 1px;
 }
-.text{
+.text1{
     font-size: 25px;
     color: black;
 }
-.text:hover{
+.text2{
+    font-size: 25px;
+    color: black;
+}
+.text3{
+    font-size: 25px;
+    color: black;
+}
+.text4{
+    font-size: 25px;
+    color: black;
+}
+.text1:hover{
+    text-decoration: underline;
+}
+.text2:hover{
+    text-decoration: underline;
+}
+.text3:hover{
+    text-decoration: underline;
+}
+.text4:hover{
     text-decoration: underline;
 }
 body > main > div.products > div.filter > div.functionality > div{
