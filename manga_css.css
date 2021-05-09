@@ -1,0 +1,434 @@
+/*проверка*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: Arial;
+    overflow-wrap: anywhere;
+}
+
+body {
+    background-color: #f7f3e9;
+}
+
+a {
+    text-decoration: none;
+    color: #46495d;
+    font-family: "Arial", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.header_line {
+    width: 100%;
+    height: 60px;
+    background-color: #f0e3ca;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_line div:nth-child(1) {
+    font-size: 25px;
+}
+
+.reg_login_buttons {
+    max-width: 500px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.reg_button {
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+    background-color: #f3214f;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition: 0.3s all ease;
+}
+
+.reg_button:hover {
+    transform: scale(1.02);
+}
+
+.reg_button a {
+    font-size: 25px;
+    text-decoration: none;
+    color: white
+}
+
+.reg_button:hover a {
+    text-decoration: underline;
+}
+
+.login_button {
+    max-width: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.login_button a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #152644
+}
+
+.login_button:hover a {
+    text-decoration: underline;
+}
+
+/* стили основного контейнера слайдера */
+.slider {
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* стили для обёртки, в которой заключены слайды */
+.slider__wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* стили для контейнера слайдов */
+.slider__items {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+/* стили для слайдов */
+.slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* стили для кнопок "вперед" и "назад" */
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slider__control_show {
+    display: flex;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+}
+
+.slider__control_prev {
+    left: 0;
+}
+
+.slider__control_next {
+    right: 0;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_prev::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_next::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* стили для индикаторов */
+.slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.slider__indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.slider__indicators li.active {
+    background-color: #fff;
+}
+
+/* для стилизации текущего слайдера */
+.img-fluid {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+.products{
+    width: 100%;
+    display: flex;
+
+}
+.typesText {
+    text-transform: uppercase;
+    font-size: 100px;
+    color: #f05945;
+    margin: 0px auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.books{
+    display: flex;
+    max-width: 1800px;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 50px;
+}
+.row_books{
+    display: flex;
+    margin: 50px 0;
+    align-items: center;
+}
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    margin: 0 30px;
+    max-width: 300px;
+    width: 100%;
+    height: 400px;
+    transition: 0.3s all ease;
+    box-shadow: 0px 4px 20px 9px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 0px 4px 20px 9px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 4px 20px 9px rgba(0, 0, 0, 0.27);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+.img_manga{
+    max-width: 250px;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: #152644 solid 1px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+    max-width: 250px;
+    width: 100%;
+}
+.title_product{
+    font-size: 20px;
+    font-weight: bold;
+}
+.des{
+    font-size: 15px;
+}
+.price{
+    font-size: 20px;
+}
+#manga1{
+    background-image: url("icon_manga/манга 1.jpg");
+
+}
+#manga2{
+    background-image: url("icon_manga/манга 2.jpg");
+}
+#manga3{
+    background-image: url("icon_manga/манга 3.jpg");
+}
+#manga4{
+    background-image: url("icon_manga/манга 4.jpg");
+}
+#manga5{
+    background-image: url("icon_manga/манга 5.jpg");
+}
+#manga6{
+    background-image: url("icon_manga/манга 6.jpg");
+}
+#manga7{
+    background-image: url("icon_manga/манга 8.png");
+}
+#manga8{
+    background-image: url("icon_manga/манга 9.jpg");
+}
+#manga9{
+    background-image: url("icon_manga/манга 11.jpg");
+}
+#manga10{
+    background-image: url("icon_manga/манга 12.jpg");
+}
+#manga11{
+    background-image: url("icon_manga/манга 13.jpg");
+}
+#manga12{
+    background-image: url("icon_manga/манга 14.jpg");
+}
+.filter{
+    max-width: 400px;
+    width: 100%;
+    margin-right: 20px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 100px;
+    background-color: white;
+    height: 480px;
+    border-bottom: #152644 solid 1px;
+    border-top: #152644 solid 1px;
+}
+.big_text{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: black solid 1px;
+}
+.text1{
+    font-size: 25px;
+    color: black;
+}
+.text2{
+    font-size: 25px;
+    color: black;
+}
+.text3{
+    font-size: 25px;
+    color: black;
+}
+.text4{
+    font-size: 25px;
+    color: black;
+}
+.text1:hover{
+    text-decoration: underline;
+}
+.text2:hover{
+    text-decoration: underline;
+}
+.text3:hover{
+    text-decoration: underline;
+}
+.text4:hover{
+    text-decoration: underline;
+}
+body > main > div.products > div.filter > div.functionality > div{
+    margin: 50px 0;
+}
+
+
+
+.footer_photo {
+    width: 100%;
+    height: 500px;
+    max-width: 1000px;
+}
+
+.footer_icons {
+    background-color: red;
+    border-radius: 50%;
+}
+
+footer {
+    position: relative;
+    background-color: #f0e3ca;
+    padding: 70px 150px;
+    width: 100%;
+
+    display: flex;
+    filter: none;
+}
+
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.MainTextFooter {
+    color: #46495d;
+    font-family: "Arial", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footerList {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLink {
+    margin: 5px 0;
+    color: black;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+}
+
+.footerLink img {
+    width: 50px;
+    margin-right: 5px;
+}
