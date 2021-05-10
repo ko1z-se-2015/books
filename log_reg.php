@@ -17,7 +17,7 @@
 </header>
 <div class="container mt-4">
     <?php
-//    if($_COOKIE['user']==''):
+    if($_COOKIE['user']==''){
     ?>    <div class="row">
         <div class="col">
             <form action="validation/check.php" method="post">
@@ -64,11 +64,11 @@
         </div>
     </div>
 </div>
-<?php //else: ?>
-<!--<P>Добро пожаловать, --><?//=$_COOKIE['user']?>
-<!--Чтобы выйти нажмите <a href="validation/exit.php">здесь</a></P>-->
-<!---->
-<?php //endif ;?>
+<?php ;} else{ ?>
+<P>Добро пожаловать, <?=$_COOKIE['user']?>
+Чтобы выйти нажмите <a href="validation/exit.php">здесь</a></P>
+
+<?php ;}?>
 
 </body>
 </html>

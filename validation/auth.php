@@ -9,13 +9,14 @@ $pass=md5($pass."imperium4");
 
 $mysql=new mysqli('localhost','root','','project');
 
-$result=$mysql->query("Select * from `users` where `nickname`='$name' and `pass`=   '$pass'  ");
+$result=$mysql->query("Select * from `users` where `nickname`='$name' and `pass`= '$pass'  ");
 $user=$result->fetch_assoc();
 if(count((array)$user)==0){
     echo "Пользователь не найден";
     exit();
 }
-//setcookie("user",$user['name'],time()+3600, "/");
+
+setcookie('user',$user['name'],time()+3600);
 $mysql->close();
-//header('Location:/');
+header('Location: main_page.html');
 ?>

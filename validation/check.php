@@ -20,6 +20,7 @@ if(mb_strlen($pass)<8 || mb_strlen($pass)>15){
 }
 $pass=md5($pass."imperium4");
 $mysql=new mysqli('localhost','root','','project');
+
 $mysql->query("INSERT INTO  `users` (`mail`,`nickname`,`pass`)
 VALUES('$email','$name','$pass')");
 $mysql->close();
