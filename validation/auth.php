@@ -15,7 +15,7 @@ if(count((array)$user)==0){
     echo "Пользователь не найден";
     exit();
 }
-setcookie('user',$user['name'],time()+3600,"/");
+//setcookie("user",$user['name'],time()+3600, "/");
 $mysql->close();
-header('Location:/');
+//header('Location:/');
 ?>
