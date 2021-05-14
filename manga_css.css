@@ -391,7 +391,6 @@ footer {
     background-color: #f0e3ca;
     padding: 70px 150px;
     width: 100%;
-
     display: flex;
     filter: none;
 }
@@ -432,3 +431,18 @@ footer {
     width: 50px;
     margin-right: 5px;
 }
+.info_section{
+   margin-left: 100px;
+}
+.info_section > div{
+    margin-top: 10px;
+}
+.info_section > div > a:hover{
+    text-decoration: underline;
+}
+.bold_text{
+    font-size: 30px;
+    /*font-weight: bold;*/
+    text-transform: uppercase;
+}
+

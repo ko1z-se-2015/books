@@ -9,16 +9,9 @@
     <title>Main Page</title>
 </head>
 <body>
-<header>
-    <div class="header_line">
-        <div>Welcome to the our bookstore</div>
-        <div class="reg_login_buttons">
-            <div class="reg_button"><a href="log_reg.php">Sign up</a></div>
-            <div class="login_button"><a href="log_reg.php">Log in</a></div>
-        </div>
-
-    </div>
-</header>
+<?php
+include "header.php";
+?>
 
 <main>
 
@@ -76,38 +69,38 @@
 </main>
 
 <footer>
-<!--    <div class="footerSection">-->
-<!--        <p class="MainTextFooter">About us</p>-->
-<!--        <div class="footerList  MainTextFooter">-->
-<!--            <a href="#" class="footerLink MainTextFooter">Contract</a>-->
-<!--            <a href="#" class="footerLink MainTextFooter">Donate</a>-->
-<!--        </div>-->
-<!--    </div>-->
+    <!--    <div class="footerSection">-->
+    <!--        <p class="MainTextFooter">About us</p>-->
+    <!--        <div class="footerList  MainTextFooter">-->
+    <!--            <a href="#" class="footerLink MainTextFooter">Contract</a>-->
+    <!--            <a href="#" class="footerLink MainTextFooter">Donate</a>-->
+    <!--        </div>-->
+    <!--    </div>-->
 
-<!--    <div class="footerSection">-->
-<!--        <p class="MainTextFooter">Social Media</p>-->
-<!--        <div class="footerList  MainTextFooter">-->
-<!--            <a href="https://vk.com/frolic4" class="footerLink"> <img class="footer_icons"-->
-<!--                                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png"/> Vk</a>-->
+    <!--    <div class="footerSection">-->
+    <!--        <p class="MainTextFooter">Social Media</p>-->
+    <!--        <div class="footerList  MainTextFooter">-->
+    <!--            <a href="https://vk.com/frolic4" class="footerLink"> <img class="footer_icons"-->
+    <!--                                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png"/> Vk</a>-->
 
-<!--            <a href="https://www.instagram.com/myrzasoff/" class="footerLink"> <img class="footer_icons"-->
-<!--                                                                                    src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"/> Instagram</a>-->
-<!--            <a href="https://t.me/elhanz4" class="footerLink"> <img class="footer_icons"-->
-<!--                                                                    src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png"/> Telegram</a>-->
-<!--        </div>-->
-<!--    </div>-->
-        <div class="info_section">
-            <div class="bold_text">Мы в социальных сетях</div>
-            <div><a href="#">Instagram</a></div>
-            <div><a href="#">Facebook</a></div>
-            <div><a href="#">Vkontakte</a></div>
-        </div>
-        <div class="info_section">
-            <div class="bold_text">Контакты</div>
-            <div><a href="#">Номер:+70921315123</a></div>
-            <div><a href="#">Адрес:Корапа 26, Астана</a></div>
-            <div><a href="#">E-mail:bomaco@mail.ru</a></div>
-        </div>
+    <!--            <a href="https://www.instagram.com/myrzasoff/" class="footerLink"> <img class="footer_icons"-->
+    <!--                                                                                    src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"/> Instagram</a>-->
+    <!--            <a href="https://t.me/elhanz4" class="footerLink"> <img class="footer_icons"-->
+    <!--                                                                    src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png"/> Telegram</a>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="info_section">
+        <div class="bold_text">Мы в социальных сетях</div>
+        <div><a href="#">Instagram</a></div>
+        <div><a href="#">Facebook</a></div>
+        <div><a href="#">Vkontakte</a></div>
+    </div>
+    <div class="info_section">
+        <div class="bold_text">Контакты</div>
+        <div><a href="#">Номер:+70921315123</a></div>
+        <div><a href="#">Адрес:Корапа 26, Астана</a></div>
+        <div><a href="#">E-mail:bomaco@mail.ru</a></div>
+    </div>
 </footer>
 
 

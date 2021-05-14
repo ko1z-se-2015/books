@@ -7,21 +7,18 @@
     <link href="css_main_page.css" rel="stylesheet">
     <link href="register_login.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Форма регистрации и авторизации</title>
+    <title>Форма регистрации</title>
 </head>
 <body>
 <header>
     <div class="header_line2">
-        <div class="login_button"><a href="main_page.html">На главную страницу</a></div>
+        <div class="login_button"><a href="main_page.php">На главную страницу</a></div>
     </div>
 </header>
 <div class="container mt-4">
-    <?php
-    if($_COOKIE['name']==''){
-    ?>
     <div class="row">
         <div class="col">
-            <form action="validation/check.php" method="post">
+            <form action="fun_reg.php" method="post">
                 <br>
                 <h1>Регистрация</h1>
                 <p>Пожалуйста заполните форму, если вы здесь впервые</p>
@@ -39,37 +36,12 @@
                 <hr>
                 <div class="signin">
                     <p>Создавая аккаунт вы соглашаетесь с нашими <a href="#"><br>
-                        Условиями конфиденциальности</a>.</p>
+                            Условиями конфиденциальности</a>.</p>
                 </div>
             </form>
         </div>
-        <div class="col">
-            <form action="validation/auth.php" method="post">
-                <br>
-                <h1>Авторизация</h1>
-                <p>Пожалуйста заполните форму,если у вас уже есть аккаунт</p>
-                <hr>
-
-                <label><b>Никнейм</b></label><br>
-                <input type="text" class="form-control" placeholder="Введите ваш никнейм" name="nickname2" required><br>
-
-                <label><b>Пароль</b></label><br>
-                <input type="password" class="form-control" placeholder="Введите пароль" name="pass2" required><br>
-
-                <button class="btn-success" type="submit">Войти</button>
-
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Запомнить меня
-                </label><br>
-            </form>
         </div>
     </div>
 </div>
-<?php ;} else{ ?>
-<P>Добро пожаловать, <?=$_COOKIE['user']?>
-Чтобы выйти нажмите <a href="validation/exit.php">здесь</a></P>
-
-<?php ;}?>
-
 </body>
 </html>

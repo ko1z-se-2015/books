@@ -350,6 +350,19 @@ footer {
     width: 50px;
     margin-right: 5px;
 }
+.info_section{
+    margin-left: 50px;
+}
+.info_section > div{
+    margin-top: 10px;
+}
+.info_section > div > a:hover{
+ text-decoration: underline;
+}
+.bold_text{
+    font-size: 30px;
+    text-transform: uppercase;
+}
 
 @media screen and (max-width: 1380px ) {
     .icon_text {
