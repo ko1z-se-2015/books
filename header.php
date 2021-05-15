@@ -10,7 +10,8 @@ include "DB/connnect.php";
             <div class="login_button"><a href="login.php">Log in</a></div>
         </div>
         <?php }else{?>
-        <div><a href="profile.php"><?php echo $_COOKIE['name']?></a></div>
+        <div><a href="profile.php"><?php echo "Никнейм: ",$_COOKIE['name'] ?></a></div>
+
         <?php }?>
 
     </div>
