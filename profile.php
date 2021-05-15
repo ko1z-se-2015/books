@@ -12,8 +12,18 @@
 include "header.php";
 ?>
 <div>
-    <div></div>
-    <div></div>
+    <div>
+        <form>
+            <input type="password" placeholder="Введите новый пароль" name="password">
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <div>
+        <form>
+            <input type="email" placeholder="Введите новый mail" name="mail">
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
     <div>
         <form action="validation/exit.php">
             <button type="submit">Выйти</button>
