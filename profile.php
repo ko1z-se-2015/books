@@ -11,22 +11,25 @@
 <?php
 include "header.php";
 ?>
-<div>
+
     <div>
-        <form>
-            <input type="password" placeholder="Введите новый пароль" name="password">
-            <button type="submit">Отправить</button>
+        <form action="validation/change_pass.php" method="post">
+            <input type="password" placeholder="Введите новый пароль" name="pass">
+            <button type="submit"  name="3">Отправить</button>
         </form>
     </div>
+<br>
     <div>
-        <form>
+        <form  action="validation/change_mail.php" method="post">
             <input type="email" placeholder="Введите новый mail" name="mail">
-            <button type="submit">Отправить</button>
+            <button type="submit" name="1">Отправить</button>
         </form>
     </div>
+
+<br>
     <div>
         <form action="validation/exit.php">
-            <button type="submit">Выйти</button>
+            <button type="submit"  name="2">Выйти</button>
         </form>
     </div>
 </div>
