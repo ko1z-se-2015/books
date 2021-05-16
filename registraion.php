@@ -24,13 +24,13 @@
                 <p>Пожалуйста заполните форму, если вы здесь впервые</p>
                 <hr>
                 <label ><b>Email</b></label><br>
-                <input type="text" class="form-control" placeholder="Введите ваш Email" name="email" ><br>
+                <input type="email" class="form-control" placeholder="Введите ваш Email" name="email" required><br>
 
                 <label ><b>Никнейм</b></label><br>
-                <input type="text" class="form-control" placeholder="Введите ваш никнейм" name="nickname"><br>
+                <input type="text" class="form-control" placeholder="Введите ваш никнейм" name="nickname" required><br>
 
                 <label ><b>Пароль</b></label><br>
-                <input type="password" class="form-control" placeholder="Введите пароль" name="pass" ><br>
+                <input type="password" class="form-control" placeholder="Введите пароль" name="pass" required ><br>
 
                 <button type="submit" class="btn-success"><b>Отправить</b></button>
                 <hr>
