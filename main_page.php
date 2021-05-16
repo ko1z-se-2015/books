@@ -1,3 +1,6 @@
+<?php
+include 'DB/connnect.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
