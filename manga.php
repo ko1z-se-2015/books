@@ -1,13 +1,13 @@
 ﻿<?php
 $mysql = new mysqli('localhost', 'root', '', 'project');
+
 ?>
 <!DOCTYPE html>
 <html lang="eng">
 <head>
     <link href="manga_css.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Main Page</title>
     <script>
 
@@ -16,7 +16,8 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 <body>
 <?php
 include "header.php";
-include "DB/connnect.php";
+$mysql->set_charset("utf8");
+
 ?>
 <main>
     <div class="slider">
@@ -70,6 +71,7 @@ include "DB/connnect.php";
             <div class="row_books">
                 <?php
                 $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 LIMIT 0,4");
+                header('Content-Type: text/html; charset=utf-8');
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
