@@ -24,5 +24,4 @@ $mysql=new mysqli('localhost','root','','project');
 $mysql->query("INSERT INTO  `users` (`mail`,`nickname`,`pass`)
 VALUES('$email','$name','$pass')");
 $mysql->close();
-header('Location: main_page.html');
 ?>

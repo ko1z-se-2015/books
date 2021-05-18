@@ -309,7 +309,7 @@ footer {
     background-color: #f0e3ca;
     padding: 70px 150px;
     width: 100%;
-
+    bottom: 0;
     display: flex;
     filter: none;
 }

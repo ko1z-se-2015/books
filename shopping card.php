@@ -4,7 +4,8 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 <!DOCTYPE html>
 <html lang="eng">
 <head>
-    <link href="manga_css.css" rel="stylesheet">
+    <link href="css_main_page.css" rel="stylesheet">
+    <link href="shopping_card_css.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
@@ -18,11 +19,11 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 include "header.php";
 ?>
 <main>
-    <div>
+    <div class="big_text">
         Корзина
     </div>
     <div>
-        <div>
+        <div class="shopping_card_text">
             Предметы в корзине:
         </div>
         <?php
