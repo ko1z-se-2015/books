@@ -1,5 +1,5 @@
 <?php
-include "DB/connnect.php";
+
 ?>
 <?php
 $mysql=new mysqli('localhost','root','','project');

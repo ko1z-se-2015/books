@@ -1,13 +1,13 @@
-<?php
+﻿<?php
 $mysql = new mysqli('localhost', 'root', '', 'project');
+
 ?>
 <!DOCTYPE html>
-<html lang="eng">
+<html>
 <head>
     <link href="manga_css.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Main Page</title>
     <script>
 
@@ -16,9 +16,12 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 <body>
 <?php
 include "header.php";
-include "DB/connnect.php";
+$mysql->set_charset("utf8");
+$mysql->query("SET NAMES 'utf-8'");
+header('Content-Type: text/html; charset=utf-8');
 ?>
 <main>
+
     <div class="slider">
         <div class="slider__wrapper">
             <div class="slider__items">
@@ -71,13 +74,15 @@ include "DB/connnect.php";
                 <?php
                 $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 LIMIT 0,4");
                 while ($b = mysqli_fetch_assoc($book)) {
+
                     ?>
                     <div class="book">
-                        <div class="img_manga" style="background-image: url('icon_manga/<?php echo $b['picture'] ?>')"></div>
+                        <div class="img_manga"
+                             style="background-image: url('icon_manga/<?php echo $b['picture'] ?>')"></div>
                         <div class="description">
-                            <div class="title_product"><?php echo $b['name']?></div>
-                            <div class="des">Жанр:<?php echo $b['genres']?></div>
-                            <div class="price">Цена: <?php echo $b['price']?>тенге</div>
+                            <div class="title_product"><?php echo $b['name'] ?></div>
+                            <div class="des">Жанр:<?php echo $b['genres'] ?></div>
+                            <div class="price">Цена: <?php echo $b['price'] ?>тенге</div>
                         </div>
                     </div>
                 <?php } ?>
@@ -88,11 +93,12 @@ include "DB/connnect.php";
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book" id="books">
-                        <div class="img_manga" style="background-image: url('icon_manga/<?php echo $b['picture'] ?>')"></div>
+                        <div class="img_manga"
+                             style="background-image: url('icon_manga/<?php echo $b['picture'] ?>')"></div>
                         <div class="description">
-                            <div class="title_product"><?php echo $b['name']?></div>
-                            <div class="des">Жанр:<?php echo $b['genres']?></div>
-                            <div class="price">Цена: <?php echo $b['price']?>тенге</div>
+                            <div class="title_product"><?php echo $b['name'] ?></div>
+                            <div class="des">Жанр:<?php echo $b['genres'] ?></div>
+                            <div class="price">Цена: <?php echo $b['price'] ?>тенге</div>
                         </div>
                     </div>
                 <?php } ?>
@@ -103,11 +109,12 @@ include "DB/connnect.php";
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
-                        <div class="img_manga" style="background-image: url('icon_manga/<?php echo $b['picture'] ?>')"></div>
+                        <div class="img_manga"
+                             style="background-image: url('icon_manga/<?php echo $b['picture'] ?>')"></div>
                         <div class="description">
-                            <div class="title_product"><?php echo $b['name']?></div>
-                            <div class="des">Жанр:<?php echo $b['genres']?></div>
-                            <div class="price">Цена: <?php echo $b['price']?>тенге</div>
+                            <div class="title_product"><?php echo $b['name'] ?></div>
+                            <div class="des">Жанр:<?php echo $b['genres'] ?></div>
+                            <div class="price">Цена: <?php echo $b['price'] ?>тенге</div>
                         </div>
                     </div>
                 <?php } ?>
