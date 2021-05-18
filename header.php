@@ -1,19 +1,16 @@
 <?php
-//if (isset($_COOKIE['user'])) {
-//    $mysqli = mysqli_connect("localhost", "root", "", "project");
-//    $user = $_COOKIE['user'];
-//    $results = mysqli_query($mysqli, "SELECT * FROM  `users` where `login`='$user' ");
-//    $results = mysqli_fetch_assoc($results);
-//}
+include "DB/connnect.php";
 ?>
 <?php
 $mysql=new mysqli('localhost','root','','project');
+$m = mysqli_query($mysql,"SELECT id FROM `user` WHERE `id` = 1");
+setcookie('us','',time()+3600,'/');
 ?>
 <header>
     <div class="header_line">
         <div><a href="main_page.php">BoMaCo</a></div>
         <?php
-        if(!isset($_COOKIE['user'])) {?>
+        if($_COOKIE['user'] =='') {?>
         <div class="reg_login_buttons">
             <div class="reg_button"><a href="registraion.php">Sign up</a></div>
             <div class="login_button"><a href="login.php">Log in</a></div>
