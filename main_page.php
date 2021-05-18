@@ -56,7 +56,7 @@ include "header.php";
     </div>
     <div class="row_icon">
         <div class="icons">
-            <div class="icon"><div ><a class="icon_text" href="manga.html">manga</a></div></div>
+            <div class="icon"><div ><a class="icon_text" href="manga.php">manga</a></div></div>
             <div class="icon"><div ><a class="icon_text" href="#">kazakh literature</a></div></div>
             <div class="icon"><div ><a class="icon_text" href="#">western literature</a></div></div>
         </div>
@@ -72,26 +72,6 @@ include "header.php";
 </main>
 
 <footer>
-    <!--    <div class="footerSection">-->
-    <!--        <p class="MainTextFooter">About us</p>-->
-    <!--        <div class="footerList  MainTextFooter">-->
-    <!--            <a href="#" class="footerLink MainTextFooter">Contract</a>-->
-    <!--            <a href="#" class="footerLink MainTextFooter">Donate</a>-->
-    <!--        </div>-->
-    <!--    </div>-->
-
-    <!--    <div class="footerSection">-->
-    <!--        <p class="MainTextFooter">Social Media</p>-->
-    <!--        <div class="footerList  MainTextFooter">-->
-    <!--            <a href="https://vk.com/frolic4" class="footerLink"> <img class="footer_icons"-->
-    <!--                                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png"/> Vk</a>-->
-
-    <!--            <a href="https://www.instagram.com/myrzasoff/" class="footerLink"> <img class="footer_icons"-->
-    <!--                                                                                    src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"/> Instagram</a>-->
-    <!--            <a href="https://t.me/elhanz4" class="footerLink"> <img class="footer_icons"-->
-    <!--                                                                    src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png"/> Telegram</a>-->
-    <!--        </div>-->
-    <!--    </div>-->
     <div class="info_section">
         <div class="bold_text">Мы в социальных сетях</div>
         <div><a href="#">Instagram</a></div>

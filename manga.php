@@ -1,3 +1,6 @@
+<?php
+$mysql = new mysqli('localhost', 'root', '', 'project');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +9,14 @@
     <meta charset="UTF-8">
 
     <title>Main Page</title>
+    <script>
+
+    </script>
 </head>
 <body>
 <?php
 include "header.php";
 include "DB/connnect.php";
-$mysql = new mysqli('localhost', 'root', '', 'project');
 ?>
 <main>
     <div class="slider">
@@ -183,7 +188,7 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
                 $book = mysqli_query($mysql, "SELECT * FROM `books`  WHERE `categery_id` = 1 LIMIT 4,4");
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
-                    <div class="book">
+                    <div class="book" id="books">
                         <div class="img_manga" style="background-image: url('icon_manga/<?php echo $b['picture'] ?>')"></div>
                         <div class="description">
                             <div class="title_product"><?php echo $b['name']?></div>
@@ -215,29 +220,6 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 </main>
 
 <footer>
-    <!--    <div class="footerSection">-->
-    <!--        <p class="MainTextFooter">About us</p>-->
-    <!--        <div class="footerList  MainTextFooter">-->
-    <!--            <a href="#" class="footerLink MainTextFooter">Contract</a>-->
-    <!--            <a href="#" class="footerLink MainTextFooter">Donate</a>-->
-    <!--        </div>-->
-    <!--    </div>-->
-
-    <!--    <div class="footerSection">-->
-    <!--        <p class="MainTextFooter">Social Media</p>-->
-    <!--        <div class="footerList  MainTextFooter">-->
-    <!--            <a href="https://vk.com/frolic4" class="footerLink"> <img class="footer_icons"-->
-    <!--                                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png"/>-->
-    <!--                Vk</a>-->
-
-    <!--            <a href="https://www.instagram.com/myrzasoff/" class="footerLink"> <img class="footer_icons"-->
-    <!--                                                                                    src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"/>-->
-    <!--                Instagram</a>-->
-    <!--            <a href="https://t.me/elhanz4" class="footerLink"> <img class="footer_icons"-->
-    <!--                                                                    src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png"/>-->
-    <!--                Telegram</a>-->
-    <!--        </div>-->
-    <!--    </div>-->
     <div class="info_section">
         <div class="bold_text">Мы в социальных сетях</div>
         <div><a href="#">Instagram</a></div>
@@ -254,6 +236,6 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 
 <script src="jquery-3.6.0.min.js"></script>
 <script src="slider.js"></script>
-<script src="filters/filters.js"></script>
+<script src="filters/filter.js"></script>
 </body>
 </html>
