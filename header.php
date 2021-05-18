@@ -1,16 +1,13 @@
-<?php
-include "DB/connnect.php";
-?>
+
 <?php
 $mysql=new mysqli('localhost','root','','project');
-$m = mysqli_query($mysql,"SELECT id FROM `user` WHERE `id` = 1");
-setcookie('us','',time()+3600,'/');
 ?>
 <header>
     <div class="header_line">
         <div><a href="main_page.php">BoMaCo</a></div>
+        <div><a href="shopping%20card.php">Корзина</a></div>
         <?php
-        if($_COOKIE['user'] =='') {?>
+        if(!isset($_COOKIE['user'])) {?>
         <div class="reg_login_buttons">
             <div class="reg_button"><a href="registraion.php">Sign up</a></div>
             <div class="login_button"><a href="login.php">Log in</a></div>
