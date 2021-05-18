@@ -2,7 +2,7 @@
 $mysql = new mysqli('localhost', 'root', '', 'project');
 ?>
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
     <link href="manga_css.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,6 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 <body>
 <?php
 include "header.php";
-include "DB/connnect.php";
 ?>
 <main>
     <div class="slider">
@@ -66,7 +65,6 @@ include "DB/connnect.php";
             </div>
         </div>
         <div class="books">
-
             <div class="row_books">
                 <?php
                 $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 LIMIT 0,4");
