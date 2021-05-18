@@ -19,11 +19,11 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 include "header.php";
 ?>
 <main>
-    <div class="big_text">
+    <div class="shopping_card_text">
         Корзина
     </div>
-    <div>
-        <div class="shopping_card_text">
+    <div class="shopping_card_items">
+        <div class="items_text">
             Предметы в корзине:
         </div>
         <?php
@@ -34,19 +34,28 @@ include "header.php";
         $query = mysqli_query($mysql, "SELECT * FROM `shopping card` WHERE `user_id` = '$id'");
         if (mysqli_num_rows($query) <= 0) {
             ?>
-            <div>
+            <div class="dont_have">
                 У вас нет товаров в корзине
             </div>
         <?php } else {
             $query = mysqli_query($mysql, "SELECT * FROM `shopping card` WHERE `user_id` = '$id'");
             while ($book = mysqli_fetch_assoc($query)){ ?>
-                <div>
-                    <div><?php echo $book['picture']?></div>
-                    <div><?php echo $book['name'] ?></div>
-                    <div><?php echo $book['price'] ?></div>
+                <div class="item_shopping_card">
+                    <div class="item_picture" id="margin" style="background-image: url('icon_manga/<?php echo $book['picture']?>')"></div>
+                    <div class="item_name" id="margin"><?php echo $book['name'] ?></div>
+                    <div class="item_price" id="margin">Цена:<?php echo $book['price'] ?></div>
                 </div>
             <?php }
             } ?>
+    </div>
+    <div class="items_text">
+        Общая сумма:<?php
+        $query = mysqli_query($mysql, "SELECT sum(`price`) as `total` FROM `shopping card` WHERE `user_id` = '$id'");
+        while ($i = mysqli_fetch_assoc($query)){
+            $total = $i['total'];
+        }
+        echo $total;
+        ?>
     </div>
 
 </main>
