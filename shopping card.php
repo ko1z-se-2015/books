@@ -39,24 +39,46 @@ include "header.php";
             </div>
         <?php } else {
             $query = mysqli_query($mysql, "SELECT * FROM `shopping card` WHERE `user_id` = '$id'");
-            while ($book = mysqli_fetch_assoc($query)){ ?>
+            while ($book = mysqli_fetch_assoc($query)) { ?>
                 <div class="item_shopping_card">
-                    <div class="item_picture" id="margin" style="background-image: url('icon_manga/<?php echo $book['picture']?>')"></div>
+                    <div class="item_picture" id="margin"
+                         style="background-image: url('icon_manga/<?php echo $book['picture'] ?>')"></div>
                     <div class="item_name" id="margin"><?php echo $book['name'] ?></div>
                     <div class="item_price" id="margin">Цена:<?php echo $book['price'] ?></div>
                 </div>
             <?php }
-            } ?>
+        } ?>
     </div>
     <div class="items_text">
-        Общая сумма:<?php
+        <?php
+        $query = mysqli_query($mysql, "SELECT * FROM `shopping card` WHERE `user_id` = '$id'");
+        if (mysqli_num_rows($query) <= 0) { ?>
+        <?php } else { ?>
+            Общая сумма:<?php }
         $query = mysqli_query($mysql, "SELECT sum(`price`) as `total` FROM `shopping card` WHERE `user_id` = '$id'");
-        while ($i = mysqli_fetch_assoc($query)){
+        while ($i = mysqli_fetch_assoc($query)) {
             $total = $i['total'];
         }
         echo $total;
         ?>
+
     </div>
+    <?php
+    $query = mysqli_query($mysql, "SELECT * FROM `shopping card` WHERE `user_id` = '$id'");
+    if (mysqli_num_rows($query) <= 0) {
+        ?>
+
+    <?php } else {
+        ?>
+        <div>
+            <form action="validation/clean.php">
+                <button type="submit">Очистить корзину</button>
+            </form>
+            <form>
+                <button type="submit">Оплатить</button>
+            </form>
+        </div>
+    <?php } ?>
 
 </main>
 

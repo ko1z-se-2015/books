@@ -13,7 +13,7 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
         <?php } else {
             ?>
             <div><a href="shopping%20card.php">Корзина</a></div>
-            <div><a href="/profile/profile.php"><?php echo "Никнейм: ", $_COOKIE['user'] ?></a></div>
+            <div><a href="profile/profile.php"><?php echo "Никнейм: ", $_COOKIE['user'] ?></a></div>
 
         <?php } ?>
 
