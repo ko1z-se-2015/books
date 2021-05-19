@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css_main_page.css" rel="stylesheet">
     <link href="profile_css.css" rel="stylesheet">
+    <link href="../css_main_page_dark.css" rel="stylesheet" >
+        <link href="../css_main_page.css" rel="stylesheet" id="theme-link">
+
     <script src="profile.js"></script>
     <title>Форма регистрации</title>
 </head>
 <body >
-<div id="gradient" />
+<!--<div id="gradient" />-->
 <?php
 include "/books/header.php";
 ?>
@@ -36,7 +37,7 @@ include "/books/header.php";
                 <input type="password" placeholder="Введите новый пароль   " name="pass">
 
                 <button type="submit">Отправить</button>
-                <br>
+                <br><br>
             </form>
         </div>
         <div>
@@ -44,10 +45,9 @@ include "/books/header.php";
                 <input type="email" placeholder="Введите новую почту   " name="mail">
 
                 <button type="submit">Отправить</button>
-                <br>
+                <br><br>
             </form>
         </div>
-
         <div>
             <form action="../validation/exit.php">
                 <button type="submit">Выйти</button>

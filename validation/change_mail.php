@@ -6,9 +6,9 @@ $name=$_COOKIE['user'];
 $sql = "UPDATE users SET mail='$mail' WHERE nickname ='$name' ";
 
 if ($mysql->query($sql) === TRUE) {
-    echo "Mail updated successfully";
+    echo "Почта успешно изменена";
 } else {
-    echo "Error updating mail: " . $mysql->error;
+    echo "Произошла ошибка " . $mysql->error;
 }
 //header("Location : http://localhost:63342/books/profile.php?_ijt=sluet1dtjgtdgm8qobigt04gj");
 $mysql->close();
