@@ -14,7 +14,7 @@
     <title>Форма регистрации</title>
 </head>
 <body >
-<!--<div id="gradient" />-->
+<div id="gradient" />
 <?php
 include "/books/header.php";
 ?>
