@@ -55,7 +55,7 @@ include "header.php";
     <div class="row_icon">
         <div class="icons">
             <div class="icon"><div ><a class="icon_text" href="manga.php">manga</a></div></div>
-            <div class="icon"><div ><a class="icon_text" href="#">kazakh literature</a></div></div>
+            <div class="icon"><div ><a class="icon_text" href="kaz_literature.php">kazakh literature</a></div></div>
             <div class="icon"><div ><a class="icon_text" href="#">western literature</a></div></div>
         </div>
         <div class="icons">

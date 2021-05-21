@@ -8,5 +8,5 @@ while ($i = mysqli_fetch_assoc($query)) {
     $id =$i['id'];
 }
 $query= mysqli_query($mysql,"INSERT INTO  `shopping card` (`name`,`picture`,`price`,`user_id`) VALUES('" . $_POST['name'] . "','$picture','$price','$id')");
-header("location: http://localhost:63342/books/main_page.php?_ijt=kq22jsabbm148d8oot6lr40h1b");
+header("location: http://localhost:63342/books/manga.php?_ijt=a0v9d9n7n46ufi03rfq65urkuj");
 ?>
