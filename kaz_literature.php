@@ -85,6 +85,7 @@ $mysql->set_charset("utf8");
                                 <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
                                 <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
                                 <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
+                                <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
                                 <?php if(!isset($_COOKIE['user'])){
                                     echo "Войдите в профиль чтобы добавить товар";
                                 }else{?>
@@ -112,6 +113,7 @@ $mysql->set_charset("utf8");
                                 <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
                                 <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
                                 <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
+                                <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
                                 <?php if(!isset($_COOKIE['user'])){
                                     echo "Войдите в профиль чтобы добавить товар";
                                 }else{?>
@@ -139,6 +141,7 @@ $mysql->set_charset("utf8");
                                 <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
                                 <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
                                 <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
+                                <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
                                 <?php if(!isset($_COOKIE['user'])){
                                     echo "Войдите в профиль чтобы добавить товар";
                                 }else{?>
