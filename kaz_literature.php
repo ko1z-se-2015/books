@@ -77,7 +77,7 @@ $mysql->set_charset("utf8");
                     <div class="book">
                         <form action="validation/fun_sc.php" method="post">
                             <div class="img_manga"
-                                 style="background-image: url('icon_kz/<?php echo $b['picture'] ?>')"></div>
+                                 style="background-image: url('icon_books/<?php echo $b['picture'] ?>')"></div>
                             <div class="description">
                                 <div  class="title_product"><?php echo $b['name'] ?></div>
                                 <div class="des">Жанр:<?php echo $b['genres'] ?></div>
@@ -104,7 +104,7 @@ $mysql->set_charset("utf8");
                     <div class="book">
                         <form action="validation/fun_sc.php" method="post">
                             <div class="img_manga"
-                                 style="background-image: url('icon_kz/<?php echo $b['picture'] ?>')"></div>
+                                 style="background-image: url('icon_books/<?php echo $b['picture'] ?>')"></div>
                             <div class="description">
                                 <div  class="title_product"><?php echo $b['name'] ?></div>
                                 <div class="des">Жанр:<?php echo $b['genres'] ?></div>
@@ -131,7 +131,7 @@ $mysql->set_charset("utf8");
                     <div class="book">
                         <form action="validation/fun_sc.php" method="post">
                             <div class="img_manga"
-                                 style="background-image: url('icon_kz/<?php echo $b['picture'] ?>')"></div>
+                                 style="background-image: url('icon_books/<?php echo $b['picture'] ?>')"></div>
                             <div class="description">
                                 <div  class="title_product"><?php echo $b['name'] ?></div>
                                 <div class="des">Жанр:<?php echo $b['genres'] ?></div>

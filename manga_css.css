@@ -285,41 +285,41 @@ a {
     font-size: 20px;
 }
 #manga1{
-    background-image: url("icon_manga/манга 1.jpg");
+    background-image: url("icon_books/манга 1.jpg");
 
 }
 #manga2{
-    background-image: url("icon_manga/манга 2.jpg");
+    background-image: url("icon_books/манга 2.jpg");
 }
 #manga3{
-    background-image: url("icon_manga/манга 3.jpg");
+    background-image: url("icon_books/манга 3.jpg");
 }
 #manga4{
-    background-image: url("icon_manga/манга 4.jpg");
+    background-image: url("icon_books/манга 4.jpg");
 }
 #manga5{
-    background-image: url("icon_manga/манга 5.jpg");
+    background-image: url("icon_books/манга 5.jpg");
 }
 #manga6{
-    background-image: url("icon_manga/манга 6.jpg");
+    background-image: url("icon_books/манга 6.jpg");
 }
 #manga7{
-    background-image: url("icon_manga/манга 8.png");
+    background-image: url("icon_books/манга 8.png");
 }
 #manga8{
-    background-image: url("icon_manga/манга 9.jpg");
+    background-image: url("icon_books/манга 9.jpg");
 }
 #manga9{
-    background-image: url("icon_manga/манга 11.jpg");
+    background-image: url("icon_books/манга 11.jpg");
 }
 #manga10{
-    background-image: url("icon_manga/манга 12.jpg");
+    background-image: url("icon_books/манга 12.jpg");
 }
 #manga11{
-    background-image: url("icon_manga/манга 13.jpg");
+    background-image: url("icon_books/манга 13.jpg");
 }
 #manga12{
-    background-image: url("icon_manga/манга 14.jpg");
+    background-image: url("icon_books/манга 14.jpg");
 }
 .filter{
     max-width: 400px;

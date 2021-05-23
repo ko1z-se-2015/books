@@ -42,7 +42,7 @@ include "header.php";
             while ($book = mysqli_fetch_assoc($query)) { ?>
                 <div class="item_shopping_card">
                     <div class="item_picture" id="margin"
-                         style="background-image: url('icon_manga/<?php echo $book['picture'] ?>')"></div>
+                         style="background-image: url('icon_books/<?php echo $book['picture'] ?>')"></div>
                     <div class="item_name" id="margin"><?php echo $book['name'] ?></div>
                     <div class="item_price" id="margin">Цена:<?php echo $book['price'] ?></div>
                 </div>
