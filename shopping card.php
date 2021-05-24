@@ -40,11 +40,19 @@ include "header.php";
         <?php } else {
             $query = mysqli_query($mysql, "SELECT * FROM `shopping card` WHERE `user_id` = '$id'");
             while ($book = mysqli_fetch_assoc($query)) { ?>
+                <div style="display:flex;">
                 <div class="item_shopping_card">
                     <div class="item_picture" id="margin"
                          style="background-image: url('icon_books/<?php echo $book['picture'] ?>')"></div>
                     <div class="item_name" id="margin"><?php echo $book['name'] ?></div>
                     <div class="item_price" id="margin">Цена:<?php echo $book['price'] ?></div>
+                </div>
+                    <div>
+                        <form action="validation/delete.php" method="post">
+                            <input type="text" value="<?php echo $book['id']?>" name="id" style="display: none">
+                            <button type="submit">Убрать</button>
+                        </form>
+                    </div>
                 </div>
             <?php }
         } ?>
