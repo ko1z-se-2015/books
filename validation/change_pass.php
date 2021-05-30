@@ -8,9 +8,9 @@ $pass=md5($pass."imperium4");
 $sql = "UPDATE users SET pass='$pass' WHERE nickname ='$name' ";
 
 if ($mysql->query($sql) === TRUE) {
-    echo "Password updated successfully";
+    echo "Пароль успешно обновлен";
 } else {
-    echo "Error updating password: " . $mysql->error;
+    echo "Ошибка обновления пароля: " . $mysql->error;
 }
 
 $mysql->close();

@@ -9,8 +9,8 @@
         <link href="css_main_page.css" rel="stylesheet" >
         <link href="button.less" rel="stylesheet" >
 
-    <link href="profile_css_light.css" rel="stylesheet" >
-    <link href="css_main_page.css" rel="stylesheet" id="theme-link">
+    <link href="profile_css_light.css" rel="stylesheet" id="theme-link" >
+
 
     <title>Личный кабинет</title>
 </head>
@@ -31,13 +31,12 @@ include "/books/header.php";
         $result=$mysql->query("SELECT * FROM users where nickname='$name' ");
         if($row = $result->fetch_assoc())
         {
-            echo '<br>Никнейм: '.$row['nickname'].'<br>Почта: '.$row['mail'].'<br>      ID: '.$row['id'].'<br>';// выводим данные
+            echo '<br>Никнейм: '.$row['nickname'].'<br>Почта: '.$row['mail'].'<br>      Айди Пользователя: '.$row['id'].'<br>';// выводим данные
         };?>
     </div>
         <div>
             <form action="validation/change_pass.php" method="post">
                 <input class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"  type="password" placeholder="Введите новый пароль   " name="pass">
-
                 <button id="btn" class="btn btn-dark" type="submit">Отправить</button>
                 <br><br>
             </form>
@@ -56,7 +55,7 @@ include "/books/header.php";
             </form>
         </div>
 </div>
-<button class="btn-toggle btn btn-dark">Переключатель тёмной темы</button>
+<button class="btn-toggle btn btn-dark">Переключатель темы</button>
 
 
 <script src="profile.js"></script>
