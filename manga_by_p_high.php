@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $mysql = new mysqli('localhost', 'root', '', 'project');
 
 ?>
@@ -70,36 +70,8 @@ $mysql->set_charset("utf8");
 
             <div class="row_books">
                 <?php
-                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 LIMIT 0,4");
+                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 ORDER BY `price` DESC  LIMIT 0,4");
                 header('Content-Type: text/html; charset=utf-8');
-                while ($b = mysqli_fetch_assoc($book)) {
-                    ?>
-                    <div class="book">
-                        <form action="validation/fun_sc.php" method="post">
-                            <div class="img_manga"
-                                 style="background-image: url('icon_books/<?php echo $b['picture'] ?>')"></div>
-                            <div class="description">
-                                <div  class="title_product"><?php echo $b['name'] ?></div>
-                                <div class="des">Жанр:<?php echo $b['genres'] ?></div>
-                                <div class="price">Цена: <?php echo $b['price'] ?>тенге</div>
-                                <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
-                                <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
-                                <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
-                                <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
-                                <?php if(!isset($_COOKIE['user'])){
-                                    echo "Войдите в профиль чтобы добавить товар";
-                                }else{?>
-
-                                <button type="submit">Выбрать</button>
-                                <?php }?>
-                            </div>
-                        </form>
-                    </div>
-                <?php } ?>
-            </div>
-            <div class="row_books">
-                <?php
-                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 LIMIT 4,4");
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
@@ -127,7 +99,35 @@ $mysql->set_charset("utf8");
             </div>
             <div class="row_books">
                 <?php
-                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 LIMIT 8,4");
+                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 ORDER BY `price` DESC LIMIT 4,4");
+                while ($b = mysqli_fetch_assoc($book)) {
+                    ?>
+                    <div class="book">
+                        <form action="validation/fun_sc.php" method="post">
+                            <div class="img_manga"
+                                 style="background-image: url('icon_books/<?php echo $b['picture'] ?>')"></div>
+                            <div class="description">
+                                <div  class="title_product"><?php echo $b['name'] ?></div>
+                                <div class="des">Жанр:<?php echo $b['genres'] ?></div>
+                                <div class="price">Цена: <?php echo $b['price'] ?>тенге</div>
+                                <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
+                                <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
+                                <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
+                                <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
+                                <?php if(!isset($_COOKIE['user'])){
+                                    echo "Войдите в профиль чтобы добавить товар";
+                                }else{?>
+
+                                    <button type="submit">Выбрать</button>
+                                <?php }?>
+                            </div>
+                        </form>
+                    </div>
+                <?php } ?>
+            </div>
+            <div class="row_books">
+                <?php
+                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 ORDER BY `price`DESC LIMIT 8,4");
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
