@@ -57,7 +57,7 @@ function updateGradient()
     }
 }
 
-setInterval(updateGradient,7);
+setInterval(updateGradient,50);
 $(document).scroll(function(e) {
     $(window).scrollTop() > 10 ? $('.header_line').addClass('nav__color') : $('.header_line').removeClass('nav__color');
 });

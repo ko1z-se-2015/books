@@ -84,7 +84,7 @@ include "header.php";
     </div>
 </footer>
 
-
+<script src="profile.js"></script>
 <script src="slider.js"></script>
 </body>
 </html>
