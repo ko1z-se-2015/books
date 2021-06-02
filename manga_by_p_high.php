@@ -76,8 +76,9 @@ $mysql->set_charset("utf8");
                     ?>
                     <div class="book">
                         <form action="validation/fun_sc.php" method="post">
-                            <div class="img_manga"
-                                 style="background-image: url('icon_books/<?php echo $b['picture'] ?>')"></div>
+                            <div class="img_manga">
+                                <img src="icon_books/<?php echo $b['picture'] ?>">
+                            </div>
                             <div class="description">
                                 <div  class="title_product"><?php echo $b['name'] ?></div>
                                 <div class="des">Жанр:<?php echo $b['genres'] ?></div>
@@ -90,9 +91,18 @@ $mysql->set_charset("utf8");
                                     echo "Войдите в профиль чтобы добавить товар";
                                 }else{?>
 
-                                    <button type="submit">Выбрать</button>
+                                    <button class="knopka" type="submit">Добавить</button>
                                 <?php }?>
                             </div>
+                        </form>
+
+                        <form action="validation/info.php" method="post">
+                            <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
+                            <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
+                            <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
+                            <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
+                            <input type="text" value="<?php echo $b['genres'] ?>" name="genres" style="display: none">
+                            <button  class="knopla_info" type="submit">Информация</button>
                         </form>
                     </div>
                 <?php } ?>
@@ -104,8 +114,9 @@ $mysql->set_charset("utf8");
                     ?>
                     <div class="book">
                         <form action="validation/fun_sc.php" method="post">
-                            <div class="img_manga"
-                                 style="background-image: url('icon_books/<?php echo $b['picture'] ?>')"></div>
+                            <div class="img_manga">
+                                <img src="icon_books/<?php echo $b['picture'] ?>">
+                            </div>
                             <div class="description">
                                 <div  class="title_product"><?php echo $b['name'] ?></div>
                                 <div class="des">Жанр:<?php echo $b['genres'] ?></div>
@@ -118,9 +129,18 @@ $mysql->set_charset("utf8");
                                     echo "Войдите в профиль чтобы добавить товар";
                                 }else{?>
 
-                                    <button type="submit">Выбрать</button>
+                                    <button class="knopka" type="submit">Добавить</button>
                                 <?php }?>
                             </div>
+                        </form>
+
+                        <form action="validation/info.php" method="post">
+                            <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
+                            <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
+                            <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
+                            <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
+                            <input type="text" value="<?php echo $b['genres'] ?>" name="genres" style="display: none">
+                            <button  class="knopla_info" type="submit">Информация</button>
                         </form>
                     </div>
                 <?php } ?>
@@ -132,8 +152,9 @@ $mysql->set_charset("utf8");
                     ?>
                     <div class="book">
                         <form action="validation/fun_sc.php" method="post">
-                            <div class="img_manga"
-                                 style="background-image: url('icon_books/<?php echo $b['picture'] ?>')"></div>
+                            <div class="img_manga">
+                                <img src="icon_books/<?php echo $b['picture'] ?>">
+                            </div>
                             <div class="description">
                                 <div  class="title_product"><?php echo $b['name'] ?></div>
                                 <div class="des">Жанр:<?php echo $b['genres'] ?></div>
@@ -146,9 +167,18 @@ $mysql->set_charset("utf8");
                                     echo "Войдите в профиль чтобы добавить товар";
                                 }else{?>
 
-                                    <button type="submit">Выбрать</button>
+                                    <button class="knopka" type="submit">Добавить</button>
                                 <?php }?>
                             </div>
+                        </form>
+
+                        <form action="validation/info.php" method="post">
+                            <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
+                            <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
+                            <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
+                            <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
+                            <input type="text" value="<?php echo $b['genres'] ?>" name="genres" style="display: none">
+                            <button  class="knopla_info" type="submit">Информация</button>
                         </form>
                     </div>
                 <?php } ?>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link href="css_main_page.css" rel="stylesheet">
+    <link href="information.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -16,16 +17,16 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 ?>
 
 <main>
-    <div>
+    <div class="about">
 
-        <img src="icon_books/<?php echo $_COOKIE['picture']?>">
+        <img class="picture margin" src="icon_books/<?php echo $_COOKIE['picture']?>">
 
-        <div>
+        <div class="margin">
            <?php echo $_COOKIE['book']?>
         </div>
-        <div><?php echo $_COOKIE['genres']?></div>
-        <div><?php echo $_COOKIE['price']?></div>
-        <div>Категория:<?php
+        <div class="margin">Жанр:<?php echo $_COOKIE['genres']?></div>
+        <div class="margin">Цена:<?php echo $_COOKIE['price']?></div>
+        <div class="margin">Категория:<?php
             $name = $_COOKIE['book'];
             $query = mysqli_query($mysql, "SELECT `categery_id` FROM `books` WHERE `name` = '$name'");
             $category = mysqli_fetch_assoc($query);
@@ -37,6 +38,9 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
             }
             ?>
         </div>
+    </div>
+    <div>
+
     </div>
 
 
