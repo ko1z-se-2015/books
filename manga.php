@@ -8,7 +8,7 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
     <link href="manga_css.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Main Page</title>
+    <title>Манга</title>
     <script>
 
     </script>
@@ -93,6 +93,15 @@ $mysql->set_charset("utf8");
                                 <button type="submit">Выбрать</button>
                                 <?php }?>
                             </div>
+                        </form>
+
+                        <form action="validation/info.php" method="post">
+                            <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
+                            <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
+                            <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
+                            <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
+                            <input type="text" value="<?php echo $b['genres'] ?>" name="genres" style="display: none">
+                            <button type="submit">Информация</button>
                         </form>
                     </div>
                 <?php } ?>
