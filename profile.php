@@ -38,40 +38,65 @@ include "header.php";
     <div class="main_part">
         <div>
             <div class="information">
+                <div>
+                    <?php
+                    $mysql = new mysqli('localhost', 'root', '', 'project');
+                    $name = $_COOKIE['user'];
+                    $result = $mysql->query("SELECT * FROM users where nickname='$name' ");
+                    if ($row = $result->fetch_assoc()) {
+                        echo '<br>Никнейм: ' . $row['nickname'] . '<br>Почта: ' . $row['mail'] . '<br>      Айди Пользователя: ' . $row['id'] . '<br>';// выводим данные
+                    }; ?>
+                </div>
+                <div>
+                    <?php
+                    $query = mysqli_query($mysql, "SELECT `id` FROM `users` WHERE `nickname` = '$name'");
+                    $query = mysqli_fetch_assoc($query);
+                    $user = $query['id'];
+                    $query = mysqli_query($mysql, "SELECT * FROM `history` WHERE `user_id` = '$user'");
+                    while ($q = mysqli_fetch_assoc($query)) {
+                        $name = $q['name'];
+                        $picture = $q['picture'];
+                        $price = $q['price'];
+                        $user_id = $q['user_id'];
+                        ?>
+                        <div>
+                            <div class="item_picture">
+                                <img src="icon_books/<?php echo $picture ?>">
+                            </div>
+                            <div class="">
+                                <div class=""><?php echo $name ?></div>
+                                <div class="">Цена:<?php echo $price ?></div>
+                            </div>
+                        </div>
+                    <?php } ?>
 
-                <?php
-                $mysql = new mysqli('localhost', 'root', '', 'project');
-                $name = $_COOKIE['user'];
-                $result = $mysql->query("SELECT * FROM users where nickname='$name' ");
-                if ($row = $result->fetch_assoc()) {
-                    echo '<br>Никнейм: ' . $row['nickname'] . '<br>Почта: ' . $row['mail'] . '<br>      Айди Пользователя: ' . $row['id'] . '<br>';// выводим данные
-                }; ?>
-            </div>
-            <div class="change_password">
-                <form action="validation/change_pass.php" method="post">
-                    <input class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
-                           type="password" placeholder="Введите новый пароль   " name="pass">
-                    <button id="btn" class="btn btn-dark" type="submit">Отправить</button>
-                    <br><br>
-                </form>
-            </div>
-            <div class="change_email">
-                <form action="validation/change_mail.php" method="post">
-                    <input class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" type="email"
-                           placeholder="Введите новую почту " name="mail">
+                </div>
+                <div class="change_password">
+                    <form action="validation/change_pass.php" method="post">
+                        <input class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
+                               type="password" placeholder="Введите новый пароль   " name="pass">
+                        <button id="btn" class="btn btn-dark" type="submit">Отправить</button>
+                        <br><br>
+                    </form>
+                </div>
+                <div class="change_email">
+                    <form action="validation/change_mail.php" method="post">
+                        <input class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
+                               type="email"
+                               placeholder="Введите новую почту " name="mail">
 
-                    <button class="btn btn-dark" type="submit">Отправить</button>
-                    <br><br>
-                </form>
-            </div>
+                        <button class="btn btn-dark" type="submit">Отправить</button>
+                        <br><br>
+                    </form>
+                </div>
 
+            </div>
         </div>
     </div>
-</div>
-<script src="jquery-3.6.0.min.js"></script>
-<script src="profile.js"></script>
-<script src="changing.js"></script>
-<script src="switch.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="profile.js"></script>
+    <script src="changing.js"></script>
+    <script src="switch.js"></script>
 </div>
 </body>
 </html>

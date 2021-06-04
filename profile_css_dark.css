@@ -117,5 +117,20 @@ a {
 }
 .main_part{
     margin: 10px 0 0 20px;
+}
+.item_picture {
+    max-width: 200px;
+    width: 100%;
+    height: 190px;
+    margin-right: 100px;
+}
 
+.item_picture img {
+    max-width: 200px;
+    width: 100%;
+    height: 190px;
+    border: #152644 1px solid;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-top: 10px;
 }
