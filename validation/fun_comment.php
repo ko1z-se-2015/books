@@ -11,3 +11,4 @@ $query = mysqli_query($mysql, "INSERT INTO `comments`( `user`, `book_id`, `comme
 
 header("Location: /books/information.php?id=".$book_id);
 ?>
+

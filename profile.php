@@ -19,6 +19,7 @@
 include "header.php";
 ?>
 
+
 <div class="container6">
     <div class="_buttons">
         <div class="_button" id="info"><a>Информация</a></div>

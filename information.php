@@ -41,6 +41,7 @@ $book_id = $book['id'];
             if ($book['categery_id'] == 2) {
                 echo 'казахская литература';
             }
+
             ?>
         </div>
     </div>

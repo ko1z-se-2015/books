@@ -18,6 +18,7 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 include "header.php";
 $mysql->set_charset("utf8");
 
+
 ?>
 <main>
     <div class="slider">
