@@ -18,7 +18,6 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 include "header.php";
 $mysql->set_charset("utf8");
 
-
 ?>
 <main>
     <div class="slider">
@@ -128,6 +127,7 @@ $mysql->set_charset("utf8");
                             </div>
                         </form>
                         <a href="information.php?id=<?php echo $b['id']?>">Информация</a>
+                        </form>
                     </div>
                 <?php } ?>
             </div>
@@ -157,7 +157,7 @@ $mysql->set_charset("utf8");
                                 <?php }?>
                             </div>
                         </form>
-                            <a href="information.php?id=<?php echo $b['id']?>">Информация</a>
+                        <a href="information.php?id=<?php echo $b['id']?>">Информация</a>
                     </div>
                 <?php } ?>
             </div>

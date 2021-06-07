@@ -14,7 +14,6 @@
 include "header.php";
 
 $mysql = new mysqli('localhost', 'root', '', 'project');
-$mysql->set_charset("utf8");
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
@@ -30,7 +29,7 @@ $book_id = $book['id'];
         <img class="picture margin" src="icon_books/<?php echo $book['picture'] ?>">
 
         <div class="margin">
-            <?php echo $book['name']; ?>
+            <?php echo $_COOKIE['book'] ?>
         </div>
         <div class="margin">Жанр:<?php echo $book['genres'] ?></div>
         <div class="margin">Цена:<?php echo $book['price'] ?></div>
@@ -41,7 +40,6 @@ $book_id = $book['id'];
             if ($book['categery_id'] == 2) {
                 echo 'казахская литература';
             }
-
             ?>
         </div>
     </div>
@@ -87,3 +85,4 @@ $book_id = $book['id'];
 
 </body>
 </html>
+
