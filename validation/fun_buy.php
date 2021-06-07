@@ -15,5 +15,5 @@ while ($q= mysqli_fetch_assoc($query)){
 
 $query = mysqli_query($mysql,"DELETE FROM `shopping card` WHERE `user_id` = '$user'");
 
-header("location: /books/main_page.php");
+header("location: /books/shopping card.php");
 ?>
