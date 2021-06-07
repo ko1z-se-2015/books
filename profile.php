@@ -71,6 +71,7 @@ include "header.php";
                     <?php } ?>
 
                 </div>
+            </div>
                 <div class="change_password">
                     <form action="validation/change_pass.php" method="post">
                         <input class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
@@ -90,7 +91,6 @@ include "header.php";
                     </form>
                 </div>
 
-            </div>
         </div>
     </div>
     <script src="jquery-3.6.0.min.js"></script>

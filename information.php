@@ -14,6 +14,7 @@
 include "header.php";
 
 $mysql = new mysqli('localhost', 'root', '', 'project');
+$mysql->set_charset("utf8");
 ?>
 
 <main>
@@ -37,10 +38,18 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
                 echo 'казахская литература';
             }
             ?>
+
+
         </div>
     </div>
     <div>
-
+        <div>
+<!--            --><?//
+//            $name = $_COOKIE['book'];
+//            $query = mysqli_query($mysql, "SELECT `categery_id` FROM `books` WHERE `name` = 'user_book'");
+//if ($us)
+//            ?>
+        </div>
     </div>
 
 
