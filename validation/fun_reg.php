@@ -22,5 +22,5 @@ $pass = md5($pass . "imperium4");
 $mysql = new mysqli('localhost', 'root', '', 'project');
 $query = mysqli_query($mysql, "INSERT INTO  `users` (`mail`,`nickname`,`pass`) VALUES('$email','$name','$pass')");
 setcookie('user', $name, time() + 3600, '/');
-header("location: http://localhost:63342/books/main_page.php?_ijt=kq22jsabbm148d8oot6lr40h1b");
+header("location: /books/main_page.php");
 ?>

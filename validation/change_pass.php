@@ -12,6 +12,6 @@ if ($mysql->query($sql) === TRUE) {
 } else {
     echo "Ошибка обновления пароля: " . $mysql->error;
 }
-
+header("location: /books/profile.php");
 $mysql->close();
 ?>

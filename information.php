@@ -29,7 +29,7 @@ $book_id = $book['id'];
         <img class="picture margin" src="icon_books/<?php echo $book['picture'] ?>">
 
         <div class="margin">
-            <?php echo $_COOKIE['book'] ?>
+            <?php echo $book['name'] ?>
         </div>
         <div class="margin">Жанр:<?php echo $book['genres'] ?></div>
         <div class="margin">Цена:<?php echo $book['price'] ?></div>

@@ -10,6 +10,6 @@ if ($mysql->query($sql) === TRUE) {
 } else {
     echo "Произошла ошибка " . $mysql->error;
 }
-//header("Location : http://localhost:63342/books/profile.php?_ijt=sluet1dtjgtdgm8qobigt04gj");
+header("location: /books/profile.php");
 $mysql->close();
 ?>
