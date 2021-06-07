@@ -71,26 +71,26 @@ include "header.php";
                     <?php } ?>
 
                 </div>
+            </div>
+                <div class="change_password">
+                    <form action="validation/change_pass.php" method="post">
+                        <input class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
+                               type="password" placeholder="Введите новый пароль   " name="pass">
+                        <button id="btn" class="btn btn-dark" type="submit">Отправить</button>
+                        <br><br>
+                    </form>
+                </div>
+                <div class="change_email">
+                    <form action="validation/change_mail.php" method="post">
+                        <input class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
+                               type="email"
+                               placeholder="Введите новую почту " name="mail">
 
-            </div>
-            <div class="change_password">
-                <form action="validation/change_pass.php" method="post">
-                    <input class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
-                           type="password" placeholder="Введите новый пароль   " name="pass">
-                    <button id="btn" class="btn btn-dark" type="submit">Отправить</button>
-                    <br><br>
-                </form>
-            </div>
-            <div class="change_email">
-                <form action="validation/change_mail.php" method="post">
-                    <input class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
-                           type="email"
-                           placeholder="Введите новую почту " name="mail">
+                        <button class="btn btn-dark" type="submit">Отправить</button>
+                        <br><br>
+                    </form>
+                </div>
 
-                    <button class="btn btn-dark" type="submit">Отправить</button>
-                    <br><br>
-                </form>
-            </div>
         </div>
     </div>
     <script src="jquery-3.6.0.min.js"></script>
