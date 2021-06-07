@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -8,9 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css_main_page.css" rel="stylesheet">
     <link href="button.less" rel="stylesheet">
-
     <link href="profile_css_dark.css" rel="stylesheet" id="theme-link">
-
 
     <title>Личный кабинет</title>
 </head>

@@ -19,6 +19,7 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
             <div><a href="/books/profile.php"><?php echo "Никнейм: ", $_COOKIE['user'] ?></a></div>
 
 
+
         <?php } ?>
 
     </div>

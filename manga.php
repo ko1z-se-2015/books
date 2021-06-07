@@ -18,6 +18,7 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 include "header.php";
 $mysql->set_charset("utf8");
 
+
 ?>
 <main>
     <div class="slider">
@@ -96,14 +97,7 @@ $mysql->set_charset("utf8");
                             </div>
                         </form>
 
-                        <form action="validation/info.php" method="post">
-                            <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
-                            <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
-                            <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
-                            <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
-                            <input type="text" value="<?php echo $b['genres'] ?>" name="genres" style="display: none">
-                            <button  class="knopla_info" type="submit">Информация</button>
-                        </form>
+                        <a href="information.php?id=<?php echo $b['id']?>">Информация</a>
                     </div>
                 <?php } ?>
             </div>
@@ -133,14 +127,7 @@ $mysql->set_charset("utf8");
                                 <?php }?>
                             </div>
                         </form>
-                        <form action="validation/info.php" method="post">
-                            <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
-                            <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
-                            <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
-                            <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
-                            <input type="text" value="<?php echo $b['genres'] ?>" name="genres" style="display: none">
-                            <button  class="knopla_info" type="submit">Информация</button>
-                        </form>
+                        <a href="information.php?id=<?php echo $b['id']?>">Информация</a>
                     </div>
                 <?php } ?>
             </div>
@@ -170,14 +157,7 @@ $mysql->set_charset("utf8");
                                 <?php }?>
                             </div>
                         </form>
-                        <form action="validation/info.php" method="post">
-                            <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
-                            <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
-                            <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
-                            <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
-                            <input type="text" value="<?php echo $b['genres'] ?>" name="genres" style="display: none">
-                            <button  class="knopla_info" type="submit">Информация</button>
-                        </form>
+                            <a href="information.php?id=<?php echo $b['id']?>">Информация</a>
                     </div>
                 <?php } ?>
             </div>
