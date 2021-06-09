@@ -18,7 +18,7 @@ if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
 
-$query = mysqli_query($mysql,"SELECT * FROM `books` WHERE `id`='$id'");
+$query = mysqli_query($mysql, "SELECT * FROM `books` WHERE `id`='$id'");
 $book = mysqli_fetch_assoc($query);
 $book_id = $book['id'];
 ?>
@@ -43,22 +43,33 @@ $book_id = $book['id'];
             ?>
         </div>
     </div>
-    <div>
-        <div>Отзывы</div>
-        <div>
-            <form action="funcionality/fun_comment.php" method="post">
-                <input name="id" type="text" value="<?php echo $book_id?>" style="display: none">
-                <input name="text" type="text">
-                <button type="submit">отправить</button>
-            </form>
+    <div class="box_comments">
+        <div class="typesText">Отзывы</div>
+        <?php
+        if(!isset($_COOKIE['id'])){
+
+
+        ?>
+        <div class="space">
+            Чтобы оставить комментарий войдите в профиль
         </div>
+        <?php }else {?>
+
+            <form class="space_2" action="funcionality/fun_comment.php" method="post">
+                <input name="id" type="text" value="<?php echo $book_id ?>" style="display: none">
+<!--                <input  class="area_text" name="text" type="text">-->
+                <textarea name="text" class="area_text"></textarea>
+                <button class="submit" type="submit">отправить</button>
+            </form>
+
+        <?php } ?>
         <?php
         $query = mysqli_query($mysql, "SELECT * FROM `comments` WHERE `book_id` = '$book_id'");
         while ($comments = mysqli_fetch_assoc($query)) {
             ?>
             <div>
-                <div><?php echo $comments['user']?></div>
-                <div><?php echo $comments['comment']?></div>
+                <div><?php echo $comments['user'] ?></div>
+                <div><?php echo $comments['comment'] ?></div>
             </div>
         <?php } ?>
 
