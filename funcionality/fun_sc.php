@@ -1,20 +1,18 @@
 <?php
 $mysql = new mysqli('localhost', 'root', '', 'project');
-$query = mysqli_query($mysql,"SELECT `id` FROM `users` WHERE `nickname` = '" . $_COOKIE['user'] . "'");
+
 $name = $_POST['name'];
 $picture = $_POST['picture'];
 $price = $_POST['price'];
-$id_book = $_POST['id'];
-while ($i = mysqli_fetch_assoc($query)) {
-    $id =$i['id'];
-}
+$id_categery = $_POST['id'];
+$id = $_COOKIE['id'];
 
 $query= mysqli_query($mysql,"INSERT INTO  `shopping card` (`name`,`picture`,`price`,`user_id`) VALUES('" . $_POST['name'] . "','$picture','$price','$id')");
-$query= mysqli_query($mysql,"SELECT `categery_id` FROM `books` WHERE `categery_id` = '$id_book'");
-$id_b = mysqli_fetch_assoc($query);
-if($id_b['categery_id'] == 1){
+$query= mysqli_query($mysql,"SELECT `categery_id` FROM `books` WHERE `categery_id` = '$id_categery'");
+$id_c = mysqli_fetch_assoc($query);
+if($id_c['categery_id'] == 1){
     header("location: /books/manga.php");
-}elseif ($id_b['categery_id'] == 2){
+}elseif ($id_c['categery_id'] == 2){
     header("location: /books/kaz_literature.php");
 }
 

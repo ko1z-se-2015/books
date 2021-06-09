@@ -22,5 +22,9 @@ $pass = md5($pass . "imperium4");
 $mysql = new mysqli('localhost', 'root', '', 'project');
 $query = mysqli_query($mysql, "INSERT INTO  `users` (`mail`,`nickname`,`pass`) VALUES('$email','$name','$pass')");
 setcookie('user', $name, time() + 3600, '/');
+$result = mysqli_query($mysql,"Select `id` from `users` where `nickname`='$name' and `pass`= '$pass'  ");
+$result = mysqli_fetch_assoc($result);
+$id = $result['id'];
+setcookie('id', $id, time()+3600, '/');
 header("location: /books/main_page.php");
 ?>

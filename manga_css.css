@@ -321,6 +321,9 @@ a {
 .knopla_info:hover{
     text-decoration: underline;
 }
+.link:hover{
+    text-decoration: underline;
+}
 
 .filter{
     max-width: 400px;

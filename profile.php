@@ -29,7 +29,7 @@ include "header.php";
             <button class="btn-toggle btn btn-dark">Переключатель темы</button>
         </div>
         <div class="_button">
-            <form action="validation/exit.php">
+            <form action="funcionality/exit.php">
                 <button class="btn btn-dark" type="submit">Выйти</button>
             </form>
         </div>
@@ -48,15 +48,14 @@ include "header.php";
                 </div>
                 <div>
                     <?php
-                    $query = mysqli_query($mysql, "SELECT `id` FROM `users` WHERE `nickname` = '$name'");
-                    $query = mysqli_fetch_assoc($query);
-                    $user = $query['id'];
+                     $user = $_COOKIE['id'];
                     $query = mysqli_query($mysql, "SELECT * FROM `history` WHERE `user_id` = '$user'");
                     while ($q = mysqli_fetch_assoc($query)) {
                         $name = $q['name'];
                         $picture = $q['picture'];
                         $price = $q['price'];
                         $user_id = $q['user_id'];
+                        $date = $q['date'];
                         ?>
                         <div>
                             <div class="item_picture">
@@ -65,6 +64,7 @@ include "header.php";
                             <div class="">
                                 <div class=""><?php echo $name ?></div>
                                 <div class="">Цена:<?php echo $price ?></div>
+                                <div class="">Дата покупки:<?php echo $date ?></div>
                             </div>
                         </div>
                     <?php } ?>
@@ -72,7 +72,7 @@ include "header.php";
                 </div>
             </div>
                 <div class="change_password">
-                    <form action="validation/change_pass.php" method="post">
+                    <form action="funcionality/change_pass.php" method="post">
                         <input class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
                                type="password" placeholder="Введите новый пароль   " name="pass">
                         <button id="btn" class="btn btn-dark" type="submit">Отправить</button>
@@ -80,7 +80,7 @@ include "header.php";
                     </form>
                 </div>
                 <div class="change_email">
-                    <form action="validation/change_mail.php" method="post">
+                    <form action="funcionality/change_mail.php" method="post">
                         <input class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
                                type="email"
                                placeholder="Введите новую почту " name="mail">

@@ -51,7 +51,7 @@ include "header.php";
                         </div>
                     </div>
 
-                    <form   class="flex_form" action="validation/delete.php" method="post">
+                    <form class="flex_form" action="funcionality/delete.php" method="post">
                         <input type="text" value="<?php echo $book['id'] ?>" name="id" style="display: none">
                         <button class="ubrat" type="submit">Убрать</button>
                     </form>
@@ -82,10 +82,10 @@ include "header.php";
     <?php } else {
         ?>
         <div class="flex">
-            <form class="form" action="validation/clean.php">
+            <form class="form" action="funcionality/clean.php">
                 <button class="button_clear" type="submit">Очистить корзину</button>
             </form>
-            <form class="form" action="validation/fun_buy.php">
+            <form class="form" action="funcionality/fun_buy.php">
                 <button class="button_buy" type="submit">Оплатить</button>
             </form>
         </div>

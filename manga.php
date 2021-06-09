@@ -75,7 +75,7 @@ $mysql->set_charset("utf8");
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
-                        <form action="validation/fun_sc.php" method="post">
+                        <form action="funcionality/fun_sc.php" method="post">
                             <div class="img_manga">
                                 <img src="icon_books/<?php echo $b['picture'] ?>">
                             </div>
@@ -96,7 +96,7 @@ $mysql->set_charset("utf8");
                             </div>
                         </form>
 
-                        <a href="information.php?id=<?php echo $b['id']?>">Информация</a>
+                        <a class="link" href="information.php?id=<?php echo $b['id']?>">Информация</a>
                     </div>
                 <?php } ?>
             </div>
@@ -106,7 +106,7 @@ $mysql->set_charset("utf8");
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
-                        <form action="validation/fun_sc.php" method="post">
+                        <form action="funcionality/fun_sc.php" method="post">
                             <div class="img_manga">
                                 <img src="icon_books/<?php echo $b['picture'] ?>">
                             </div>
@@ -126,7 +126,7 @@ $mysql->set_charset("utf8");
                                 <?php }?>
                             </div>
                         </form>
-                        <a href="information.php?id=<?php echo $b['id']?>">Информация</a>
+                        <a class="link" href="information.php?id=<?php echo $b['id']?>">Информация</a>
                         </form>
                     </div>
                 <?php } ?>
@@ -137,7 +137,7 @@ $mysql->set_charset("utf8");
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
-                        <form action="validation/fun_sc.php" method="post">
+                        <form action="funcionality/fun_sc.php" method="post">
                             <div class="img_manga">
                                 <img src="icon_books/<?php echo $b['picture'] ?>">
                             </div>
@@ -157,7 +157,7 @@ $mysql->set_charset("utf8");
                                 <?php }?>
                             </div>
                         </form>
-                        <a href="information.php?id=<?php echo $b['id']?>">Информация</a>
+                        <a class="link" href="information.php?id=<?php echo $b['id']?>">Информация</a>
                     </div>
                 <?php } ?>
             </div>

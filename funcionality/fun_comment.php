@@ -1,7 +1,7 @@
 <?php
 $mysql = new mysqli('localhost', 'root', '', 'project');
 
-$user = $_POST['user'];
+$user = $_COOKIE['user'];
 
 $book_id = $_POST['id'];
 

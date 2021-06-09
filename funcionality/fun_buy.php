@@ -1,9 +1,6 @@
 <?php
 $mysql = new mysqli('localhost', 'root', '', 'project');
-$user = $_COOKIE['user'];
-$query = mysqli_query($mysql,"SELECT `id` FROM `users` WHERE `nickname` = '$user'");
-$query = mysqli_fetch_assoc($query);
-$user = $query['id'];
+$user = $_COOKIE['id'];
 $query = mysqli_query($mysql,"SELECT * FROM `shopping card` WHERE `user_id` = '$user'");
 while ($q= mysqli_fetch_assoc($query)){
     $name = $q['name'];

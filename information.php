@@ -46,9 +46,8 @@ $book_id = $book['id'];
     <div>
         <div>Отзывы</div>
         <div>
-            <form action="validation/fun_comment.php" method="post">
+            <form action="funcionality/fun_comment.php" method="post">
                 <input name="id" type="text" value="<?php echo $book_id?>" style="display: none">
-                <input name="user" type="text" VALUE="<?php echo $_COOKIE['user'] ?>" style="display: none">
                 <input name="text" type="text">
                 <button type="submit">отправить</button>
             </form>

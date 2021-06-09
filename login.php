@@ -16,7 +16,7 @@
     </div>
 </header>
         <div class="col">
-            <form action="validation/auth.php" method="post">
+            <form action="funcionality/auth.php" method="post">
                 <br>
                 <h1>Авторизация</h1>
                 <p>Пожалуйста заполните форму,если у вас уже есть аккаунт</p>

@@ -18,7 +18,7 @@
 <div class="container mt-4">
     <div class="row">
         <div class="col">
-            <form action="validation/fun_reg.php" method="post">
+            <form action="funcionality/fun_reg.php" method="post">
                 <br>
                 <h1>Регистрация</h1>
                 <p>Пожалуйста заполните форму, если вы здесь впервые</p>
