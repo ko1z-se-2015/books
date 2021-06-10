@@ -67,7 +67,7 @@ $book_id = $book['id'];
         $query = mysqli_query($mysql, "SELECT * FROM `comments` WHERE `book_id` = '$book_id'");
         while ($comments = mysqli_fetch_assoc($query)) {
             ?>
-            <div>
+            <div class="comment">
                 <div><?php echo $comments['user'] ?></div>
                 <div><?php echo $comments['comment'] ?></div>
             </div>

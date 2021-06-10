@@ -302,6 +302,7 @@ a{
     border-radius: 50%;
 }
 footer {
+    margin-top: 20px;
     position: relative;
     background-color: #f0e3ca;
     padding: 70px 150px;
