@@ -14,11 +14,13 @@
 include "header.php";
 
 $mysql = new mysqli('localhost', 'root', '', 'project');
+$mysql->set_charset("utf8");
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
 
 $query = mysqli_query($mysql, "SELECT * FROM `books` WHERE `id`='$id'");
+
 $book = mysqli_fetch_assoc($query);
 $book_id = $book['id'];
 ?>
@@ -65,6 +67,7 @@ $book_id = $book['id'];
         <?php } ?>
         <?php
         $query = mysqli_query($mysql, "SELECT * FROM `comments` WHERE `book_id` = '$book_id'");
+
         while ($comments = mysqli_fetch_assoc($query)) {
             ?>
             <div class="comment">
