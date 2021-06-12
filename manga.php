@@ -17,6 +17,7 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 <body>
 <?php
 include "header.php";
+
 $mysql->set_charset("utf8");
 ?>
 <main>
@@ -78,7 +79,7 @@ $mysql->set_charset("utf8");
             <div class="row_books">
                 <?php
                 $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 LIMIT 0,4");
-                header('Content-Type: text/html; charset=utf-8');
+
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
