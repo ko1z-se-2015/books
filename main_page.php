@@ -13,7 +13,6 @@
 <?php
 include "header.php";
 ?>
-
 <main>
 
     <div class="slider">
@@ -21,27 +20,27 @@ include "header.php";
             <div class="slider__items">
                 <div class="slider__item">
                     <div >
-                        <img  src="https://i.postimg.cc/ZqsBD1Pd/Welcome-to-Bo-Ma-Co.png " alt="">
+                        <img  class="img-fluid" src="https://i.postimg.cc/ZqsBD1Pd/Welcome-to-Bo-Ma-Co.png " alt="">
                     </div>
 
 
                 </div>
                 <div class="slider__item">
                     <div >
-                        <img  src=" https://cdn.dynamicyield.com/api/8771345/images/10d2b875dd79__1366-530.jpg" alt="">
+                        <img  class="img-fluid" src=" https://cdn.dynamicyield.com/api/8771345/images/10d2b875dd79__1366-530.jpg" alt="">
                     </div>
 
                 </div>
                 <div class="slider__item">
                     <div >
-                        <img  src=" https://cdn.dynamicyield.com/api/8771345/images/310e7f215399__1366x530.jpg" alt="">
+                        <img  class="img-fluid" src=" https://cdn.dynamicyield.com/api/8771345/images/310e7f215399__1366x530.jpg" alt="">
                     </div>
 
 
                 </div>
                 <div class="slider__item">
                     <div >
-                        <img  src="https://cdn.dynamicyield.com/api/8771345/images/26a2e1a55cbaf__1366-530.gif " alt="">
+                        <img   class="img-fluid"src="https://cdn.dynamicyield.com/api/8771345/images/26a2e1a55cbaf__1366-530.gif " alt="">
                     </div>
                 </div>
             </div>

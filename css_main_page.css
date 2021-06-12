@@ -368,12 +368,31 @@ footer {
     }
 
 }
+@media screen and (max-width: 1375px ) {
+   .slider{
+       max-width: 1200px;
+   }
+}
 @media screen and (max-width: 1300px ) {
     .reverse{
         display: none;
     }
 }
-
+@media screen and (max-width: 1235px ) {
+    .slider{
+        max-width: 1100px;
+    }
+}
+@media screen and (max-width: 1375px ) {
+    .slider{
+        max-width: 1200px;
+    }
+}
+@media screen and (max-width: 1125px ) {
+    .slider{
+        max-width: 1000px;
+    }
+}
 @media screen and (max-width: 895px ) {
     .icon_text {
         font-size: 15px;

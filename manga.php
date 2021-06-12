@@ -2,6 +2,7 @@
 $mysql = new mysqli('localhost', 'root', '', 'project');
 
 ?>
+
 <!DOCTYPE html>
 <html lang="eng">
 <head>
@@ -17,7 +18,6 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 <?php
 include "header.php";
 $mysql->set_charset("utf8");
-
 ?>
 <main>
     <div class="slider">
@@ -25,27 +25,27 @@ $mysql->set_charset("utf8");
             <div class="slider__items">
                 <div class="slider__item">
                     <div>
-                        <img src="https://i.postimg.cc/ZqsBD1Pd/Welcome-to-Bo-Ma-Co.png " alt="">
+                        <img class="img-fluid"  src="https://i.postimg.cc/ZqsBD1Pd/Welcome-to-Bo-Ma-Co.png " alt="">
                     </div>
 
 
                 </div>
                 <div class="slider__item">
                     <div>
-                        <img src=" https://cdn.dynamicyield.com/api/8771345/images/10d2b875dd79__1366-530.jpg" alt="">
+                        <img class="img-fluid"  src=" https://cdn.dynamicyield.com/api/8771345/images/10d2b875dd79__1366-530.jpg" alt="">
                     </div>
 
                 </div>
                 <div class="slider__item">
                     <div>
-                        <img src=" https://cdn.dynamicyield.com/api/8771345/images/310e7f215399__1366x530.jpg" alt="">
+                        <img class="img-fluid"  src=" https://cdn.dynamicyield.com/api/8771345/images/310e7f215399__1366x530.jpg" alt="">
                     </div>
 
 
                 </div>
                 <div class="slider__item">
                     <div>
-                        <img src="https://cdn.dynamicyield.com/api/8771345/images/26a2e1a55cbaf__1366-530.gif " alt="">
+                        <img class="img-fluid"  src="https://cdn.dynamicyield.com/api/8771345/images/26a2e1a55cbaf__1366-530.gif " alt="">
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@ $mysql->set_charset("utf8");
         <a class="slider__control slider__control_next" href="#" role="button"></a>
     </div>
     <div class="typesText">
-        MANGA
+    МАНГА
     </div>
     <div class="products">
         <div class="filter">
@@ -65,6 +65,13 @@ $mysql->set_charset("utf8");
                 <div><a class="text3" href="manga_by_p_high.php">По возрастанию цены</a></div>
                 <div><a class="text4" href="manga_by_name.php">По названию</a></div>
             </div>
+        </div>
+        <div class="clone_filter">
+                <div class="big_text">Фильтры</div>
+                <div class="line"><a class="text1" href="manga.php">По популярности </a></div>
+                <div class="line"><a class="text2" href="manga_by_p_low.php">По убыванию цены </a></div>
+                <div class="line"><a class="text3" href="manga_by_p_high.php">По возрастанию цены</a></div>
+                <div class="line"><a class="text4" href="manga_by_name.php">По названию</a></div>
         </div>
         <div class="books">
 

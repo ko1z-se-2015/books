@@ -10,6 +10,6 @@ if ($mysql->query($sql) === TRUE) {
 } else {
     echo "Произошла ошибка " . $mysql->error;
 }
-header("location: /books/profile.php");
+header("location: /books/profile_clone.php");
 $mysql->close();
 ?>

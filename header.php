@@ -16,7 +16,7 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
         <?php } else {
             ?>
             <div><a href="/books/shopping%20card.php">Корзина</a></div>
-            <div><a href="/books/profile.php"><?php echo "Никнейм: ", $_COOKIE['user'] ?></a></div>
+            <div><a href="profile_clone.php"><?php echo "Никнейм: ", $_COOKIE['user'] ?></a></div>
 
 
 

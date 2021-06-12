@@ -1,6 +1,12 @@
 <?php
 $mysql = new mysqli('localhost', 'root', '', 'project');
 ?>
+<?php
+
+if(!isset($_COOKIE['id'])){
+    header("location: /books/main_page.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="eng">
 <head>

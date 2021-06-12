@@ -64,12 +64,12 @@ $book_id = $book['id'];
 
         <?php } ?>
         <?php
-        $query = mysqli_query($mysql, "SELECT * FROM `comments` WHERE `book_id` = '$book_id'");
+        $query = mysqli_query($mysql, "SELECT * FROM `comments` WHERE `book_id` = '$book_id' ORDER BY `id` DESC ");
         while ($comments = mysqli_fetch_assoc($query)) {
             ?>
             <div class="comment">
-                <div><?php echo $comments['user'] ?></div>
-                <div><?php echo $comments['comment'] ?></div>
+                <div class="user"><?php echo $comments['user'] ?></div>
+                <div class="text_of_user"><?php echo $comments['comment'] ?></div>
             </div>
         <?php } ?>
 

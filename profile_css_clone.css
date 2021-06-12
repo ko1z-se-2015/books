@@ -1,0 +1,150 @@
+
+.main_part{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+._buttons{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border-right: #121212 1px solid;
+    max-width: 200px;
+    width: 100%;
+}
+._button{
+    border-bottom: #121212 1px solid;
+    margin-bottom: 20px;
+}
+._button:last-child{
+    border-bottom: none;
+}
+.change_password {
+    display: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.change_email {
+    display: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.show{
+    width: 100%;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data_text {
+    color: #f3214f;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.data_subtext {
+    color: #152644;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.info{
+    max-width: 300px;
+    width: 100%;
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    box-shadow: 1px -1px 49px 3px rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+}
+.info:last-child{
+    margin-bottom: 20px;
+}
+.info div {
+    font-size: 25px;
+}
+.history_buy {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(180px*3);
+    overflow: auto;
+}
+
+.history_text {
+    color: #f3214f;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.history_item {
+    width: 500px;
+    height: 180px;
+    background: #152644;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.item_picture {
+    max-width: 150px;
+    width: 100%;
+    height: 150px;
+    margin-right: 100px;
+}
+
+.item_picture img {
+    max-width: 150px;
+    width: 100%;
+    height: 150px;
+    border: #152644 1px solid;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.item_texts{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.name{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+.price{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+.date{
+    font-size: 20px;
+    color: white;
+}
+.size{
+    width: 400px;
+    margin-bottom: 10px;
+}
+.history_buy::-webkit-scrollbar{
+    width: 6px;
+    height: auto;
+    background-color: #143861;
+}
+.history_buy::-webkit-scrollbar-thumb {
+    background-color: #f7f3e9;
+    border-radius: 5px;
+
+}
