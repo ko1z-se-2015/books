@@ -55,7 +55,7 @@ $mysql->set_charset("utf8");
         <a class="slider__control slider__control_next" href="#" role="button"></a>
     </div>
     <div class="typesText">
-       Вестерн литература
+        ВЕСТЕРН
     </div>
     <div class="products">
         <div class="filter">

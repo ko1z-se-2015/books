@@ -9,7 +9,7 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
     <link href="manga_css.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Вестерн</title>
+    <title>Maнга</title>
     <script>
 
     </script>
@@ -55,30 +55,30 @@ $mysql->set_charset("utf8");
         <a class="slider__control slider__control_next" href="#" role="button"></a>
     </div>
     <div class="typesText">
-        ВЕСТЕРН
+        КАЗАХСКАЯ ЛИТЕРАТУРА
     </div>
     <div class="products">
         <div class="filter">
             <div class="big_text">Фильтры</div>
             <div class="functionality">
-                <div><a class="text1" href="western.php">По популярности </a></div>
-                <div><a class="text2" href="western_by_p_low.php">По убыванию цены </a></div>
-                <div><a class="text3" href="western_by_p_high.php">По возрастанию цены</a></div>
-                <div><a class="text4" href="western_by_name.php">По названию</a></div>
+                <div><a class="text1" href="kaz_literature.php">По популярности </a></div>
+                <div><a class="text2" href="kaz_literature_by_p_low.php">По убыванию цены </a></div>
+                <div><a class="text3" href="kaz_literature_by_p_high.php">По возрастанию цены</a></div>
+                <div><a class="text4" href="kaz_literature_by_name.php">По названию</a></div>
             </div>
         </div>
         <div class="clone_filter">
             <div class="big_text">Фильтры</div>
-            <div class="line"><a class="text1" href="western.php">По популярности </a></div>
-            <div class="line"><a class="text2" href="western_by_p_low.php">По убыванию цены </a></div>
-            <div class="line"><a class="text3" href="western_by_p_high.php">По возрастанию цены</a></div>
-            <div class="line"><a class="text4" href="western_by_name.php">По названию</a></div>
+            <div class="line"><a class="text1" href="kaz_literature.php">По популярности </a></div>
+            <div class="line"><a class="text2" href="kaz_literature_by_p_low.php">По убыванию цены </a></div>
+            <div class="line"><a class="text3" href="kaz_literature_by_p_high.php">По возрастанию цены</a></div>
+            <div class="line"><a class="text4" href="kaz_literature_by_name.php">По названию</a></div>
         </div>
         <div class="books">
 
             <div class="row_books">
                 <?php
-                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 3 ORDER BY `price` ASC LIMIT 0,4");
+                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 2  ORDER BY `price` DESC LIMIT 0,4 ");
                 header('Content-Type: text/html; charset=utf-8');
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
@@ -117,7 +117,7 @@ $mysql->set_charset("utf8");
             </div>
             <div class="row_books">
                 <?php
-                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 3 ORDER BY `price` ASC LIMIT 4,4");
+                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 2 ORDER BY `price` DESC LIMIT 4,4");
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
@@ -155,7 +155,7 @@ $mysql->set_charset("utf8");
             </div>
             <div class="row_books">
                 <?php
-                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 3 ORDER BY `price`ASC LIMIT 8,4");
+                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 2 ORDER BY `price`DESC LIMIT 8,4");
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">

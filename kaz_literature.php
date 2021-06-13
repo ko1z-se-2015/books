@@ -69,10 +69,10 @@ $mysql->set_charset("utf8");
         </div>
         <div class="clone_filter">
             <div class="big_text">Фильтры</div>
-            <div class="line"><a class="text1" href="manga.php">По популярности </a></div>
-            <div class="line"><a class="text2" href="manga_by_p_low.php">По убыванию цены </a></div>
-            <div class="line"><a class="text3" href="manga_by_p_high.php">По возрастанию цены</a></div>
-            <div class="line"><a class="text4" href="manga_by_name.php">По названию</a></div>
+            <div class="line"><a class="text1" href="kaz_literature.php">По популярности </a></div>
+            <div class="line"><a class="text2" href="kaz_literature_by_p_low.php">По убыванию цены </a></div>
+            <div class="line"><a class="text3" href="kaz_literature_by_p_high.php">По возрастанию цены</a></div>
+            <div class="line"><a class="text4" href="kaz_literature_by_name.php">По названию</a></div>
         </div>
         <div class="books">
 
