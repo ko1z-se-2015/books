@@ -14,6 +14,8 @@
 include "header.php";
 
 $mysql = new mysqli('localhost', 'root', '', 'project');
+
+$mysql->set_charset("utf8");
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
