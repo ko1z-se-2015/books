@@ -7,10 +7,9 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 <html lang="eng">
 <head>
     <link href="manga_css.css" rel="stylesheet">
-    <link href="css_main_page.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Вестерн книги</title>
+    <title>Maнга</title>
     <script>
 
     </script>
@@ -18,8 +17,8 @@ $mysql = new mysqli('localhost', 'root', '', 'project');
 <body>
 <?php
 include "header.php";
-
 $mysql->set_charset("utf8");
+
 ?>
 <main>
     <div class="slider">
@@ -56,7 +55,7 @@ $mysql->set_charset("utf8");
         <a class="slider__control slider__control_next" href="#" role="button"></a>
     </div>
     <div class="typesText">
-        ВЕСТЕРН
+        КЛАССИКА
     </div>
     <div class="products">
         <div class="filter">
@@ -79,8 +78,8 @@ $mysql->set_charset("utf8");
 
             <div class="row_books">
                 <?php
-                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 4 LIMIT 0,4");
-
+                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 4  ORDER BY `price` DESC LIMIT 0,4 ");
+                header('Content-Type: text/html; charset=utf-8');
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
@@ -105,13 +104,20 @@ $mysql->set_charset("utf8");
                             </div>
                         </form>
 
-                        <a class="link" href="information.php?id=<?php echo $b['id']?>">Информация</a>
+                        <form action="funcionality/info.php" method="post">
+                            <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
+                            <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
+                            <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
+                            <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
+                            <input type="text" value="<?php echo $b['genres'] ?>" name="genres" style="display: none">
+                            <button  class="knopla_info" type="submit">Информация</button>
+                        </form>
                     </div>
                 <?php } ?>
             </div>
             <div class="row_books">
                 <?php
-                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 4 LIMIT 4,4");
+                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 4 ORDER BY `price` DESC LIMIT 4,4");
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
@@ -131,18 +137,25 @@ $mysql->set_charset("utf8");
                                     echo "Войдите в профиль чтобы добавить товар";
                                 }else{?>
 
-                                    <button  class="knopka" type="submit">Выбрать</button>
+                                    <button class="knopka" type="submit">Добавить</button>
                                 <?php }?>
                             </div>
                         </form>
-                        <a class="link" href="information.php?id=<?php echo $b['id']?>">Информация</a>
+
+                        <form action="funcionality/info.php" method="post">
+                            <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
+                            <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
+                            <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
+                            <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
+                            <input type="text" value="<?php echo $b['genres'] ?>" name="genres" style="display: none">
+                            <button  class="knopla_info" type="submit">Информация</button>
                         </form>
                     </div>
                 <?php } ?>
             </div>
             <div class="row_books">
                 <?php
-                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 4 LIMIT 8,4");
+                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 4 ORDER BY `price`DESC LIMIT 8,4");
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
@@ -162,11 +175,19 @@ $mysql->set_charset("utf8");
                                     echo "Войдите в профиль чтобы добавить товар";
                                 }else{?>
 
-                                    <button  class="knopka" type="submit">Выбрать</button>
+                                    <button class="knopka" type="submit">Добавить</button>
                                 <?php }?>
                             </div>
                         </form>
-                        <a class="link" href="information.php?id=<?php echo $b['id']?>">Информация</a>
+
+                        <form action="funcionality/info.php" method="post">
+                            <input type="text" value="<?php echo $b['name'] ?>" name="name" style="display: none">
+                            <input type="text" value="<?php echo $b['picture'] ?>" name="picture" style="display: none">
+                            <input type="text" value="<?php echo $b['price'] ?>" name="price" style="display: none">
+                            <input type="text" value="<?php echo $b['categery_id'] ?>" name="id" style="display: none">
+                            <input type="text" value="<?php echo $b['genres'] ?>" name="genres" style="display: none">
+                            <button  class="knopla_info" type="submit">Информация</button>
+                        </form>
                     </div>
                 <?php } ?>
             </div>
