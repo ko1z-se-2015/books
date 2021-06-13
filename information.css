@@ -132,3 +132,47 @@
     background-color: #f7f3e9;
     border-radius: 5px;
 }
+@media screen and (max-width: 645px) {
+
+    .space_2{
+        padding: 0 10px;
+    }
+    .area_text{
+        max-width: 550px;
+        height: 90px;
+    }
+    .text_of_user{
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 540px) {
+   .margin:nth-child(3){
+ font-size: 35px;
+   }
+}
+@media screen and (max-width: 475px) {
+    .margin:nth-child(3){
+        font-size: 30px;
+    }
+    main{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 460px){
+    .space{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 445px) {
+    .margin:nth-child(2){
+        font-size: 40px;
+    }
+    .margin:nth-child(4){
+        font-size: 30px;
+    }
+    .margin:nth-child(5){
+        font-size: 30px;
+    }
+
+}

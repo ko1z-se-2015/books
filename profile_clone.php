@@ -56,7 +56,7 @@ include "header.php";
                         <div><?php echo $result['mail'] ?></div>
                     </div>
                 </div>
-                <div class="history_text">История покупак</div>
+                <div class="history_text">История покупок</div>
                 <div class="history_buy">
                     <div>
                         <?php
