@@ -20,5 +20,5 @@ $result = mysqli_fetch_assoc($result);
 $id = $result['id'];
 setcookie('user',$name,time()+3600,'/');
 setcookie('id', $id, time()+3600, '/');
-header("location: /books/main_page.php");
+header("location: /books/pages/main_page.php");
 ?>

@@ -26,5 +26,5 @@ $result = mysqli_query($mysql,"Select `id` from `users` where `nickname`='$name'
 $result = mysqli_fetch_assoc($result);
 $id = $result['id'];
 setcookie('id', $id, time()+3600, '/');
-header("location: /books/main_page.php");
+header("location: /books/pages/main_page.php");
 ?>
