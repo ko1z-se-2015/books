@@ -78,7 +78,7 @@ $mysql->set_charset("utf8");
 
             <div class="row_books">
                 <?php
-                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1  ORDER BY `price` ASC LIMIT 0,4 ");
+                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1  ORDER BY `price` DESC LIMIT 0,4 ");
                 header('Content-Type: text/html; charset=utf-8');
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
@@ -117,7 +117,7 @@ $mysql->set_charset("utf8");
             </div>
             <div class="row_books">
                 <?php
-                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 ORDER BY `price` ASC LIMIT 4,4");
+                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 ORDER BY `price` DESC LIMIT 4,4");
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
@@ -155,7 +155,7 @@ $mysql->set_charset("utf8");
             </div>
             <div class="row_books">
                 <?php
-                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 ORDER BY `price` ASC LIMIT 8,4");
+                $book = mysqli_query($mysql, "SELECT * FROM `books` WHERE `categery_id` = 1 ORDER BY `price`DESC LIMIT 8,4");
                 while ($b = mysqli_fetch_assoc($book)) {
                     ?>
                     <div class="book">
