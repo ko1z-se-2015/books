@@ -49,18 +49,18 @@ include "header.php";
         <a class="slider__control slider__control_next" href="#" role="button"></a>
     </div>
     <div class="typesText">
-        Types of books
+        ТИПЫ КНИЖОК
     </div>
     <div class="row_icon">
         <div class="icons">
-            <div class="icon"><div ><a class="icon_text" href="manga.php">manga</a></div></div>
-            <div class="icon"><div ><a class="icon_text" href="kaz_literature.php">kazakh literature</a></div></div>
-            <div class="icon"><div ><a class="icon_text" href="western.php">western literature</a></div></div>
+            <div class="icon"><div ><a class="icon_text" href="manga.php">манга</a></div></div>
+            <div class="icon"><div ><a class="icon_text" href="kaz_literature.php">казахская литература</a></div></div>
+            <div class="icon"><div ><a class="icon_text" href="western.php">вестерн</a></div></div>
         </div>
         <div class="icons">
-            <div class="icon"><div ><a class="icon_text" href="classic.php">classic</a></div></div>
-            <div class="icon"><div ><a class="icon_text" href="education.php">educational books</a></div></div>
-            <div class="icon"><div ><a class="icon_text" href="kids.php">books for children</a></div></div>
+            <div class="icon"><div ><a class="icon_text" href="classic.php">классика</a></div></div>
+            <div class="icon"><div ><a class="icon_text" href="education.php">образовательные книжки</a></div></div>
+            <div class="icon"><div ><a class="icon_text" href="kids.php">книжки для детей</a></div></div>
         </div>
     </div>
 
