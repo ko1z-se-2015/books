@@ -26,7 +26,7 @@ $mysql->set_charset("utf8");
             <div class="slider__items">
                 <div class="slider__item">
                     <div>
-                        <img  class="img-fluid" src="https://i.postimg.cc/ZqsBD1Pd/Welcome-to-Bo-Ma-Co.png " alt="">
+                        <img class="img-fluid"  src="https://i.postimg.cc/ZqsBD1Pd/Welcome-to-Bo-Ma-Co.png " alt="">
                     </div>
 
 
@@ -55,16 +55,16 @@ $mysql->set_charset("utf8");
         <a class="slider__control slider__control_next" href="#" role="button"></a>
     </div>
     <div class="typesText">
-        КАЗАХСКАЯ ЛИТЕРАТУРА
+        МАНГА
     </div>
     <div class="products">
         <div class="filter">
             <div class="big_text">Фильтры</div>
             <div class="functionality">
-                <div><a class="text1">По популярности </a></div>
-                <div><a class="text2">По убыванию цены </a></div>
-                <div><a class="text3">По возрастанию цены</a></div>
-                <div><a class="text4">По названию</a></div>
+                <div><a class="text1" href="kaz_literature.php">По популярности </a></div>
+                <div><a class="text2" href="kaz_literature_by_p_low.php">По убыванию цены </a></div>
+                <div><a class="text3" href="kaz_literature_by_p_high.php">По возрастанию цены</a></div>
+                <div><a class="text4" href="kaz_literature_by_name.php">По названию</a></div>
             </div>
         </div>
         <div class="clone_filter">
@@ -75,6 +75,7 @@ $mysql->set_charset("utf8");
             <div class="line"><a class="text4" href="kaz_literature_by_name.php">По названию</a></div>
         </div>
         <div class="books">
+
 
             <div class="row_books">
                 <?php
