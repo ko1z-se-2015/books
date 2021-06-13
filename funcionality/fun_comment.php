@@ -1,6 +1,6 @@
 <?php
 $mysql = new mysqli('localhost', 'root', '', 'project');
-
+$mysql->set_charset("utf8");
 $user = $_COOKIE['user'];
 
 $book_id = $_POST['id'];
