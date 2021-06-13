@@ -15,7 +15,7 @@
         <div class="login_button"><a href="main_page.php">На главную страницу</a></div>
     </div>
 </header>
-        <div class="col">
+        <div class="container mt-4">
             <form action="funcionality/auth.php" method="post">
                 <br>
                 <h1>Авторизация</h1>
@@ -28,11 +28,8 @@
                 <label><b>Пароль</b></label><br>
                 <input type="password" class="form-control" placeholder="Введите пароль" name="pass2" required><br>
 
-                <button class="btn-success" type="submit">Войти</button>
+                <button class="btn-success login_button"  type="submit">Войти</button>
 
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Запомнить меня
-                </label><br>
             </form>
         </div>
     </div>

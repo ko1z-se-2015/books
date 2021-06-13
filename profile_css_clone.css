@@ -1,4 +1,6 @@
-
+a{
+    color:white;
+}
 .main_part{
     display: flex;
     margin-top: 100px;

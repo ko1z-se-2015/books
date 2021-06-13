@@ -13,7 +13,6 @@ if (!isset($_COOKIE['id'])) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css_main_page.css" rel="stylesheet">
-    <link href="button.less" rel="stylesheet">
     <link href="profile_css_clone.css" rel="stylesheet">
 
     <title>Личный кабинет</title>

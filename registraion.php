@@ -32,7 +32,7 @@
                 <label ><b>Пароль</b></label><br>
                 <input type="password" class="form-control" placeholder="Введите пароль" name="pass" required ><br>
 
-                <button type="submit" class="btn-success"><b>Отправить</b></button>
+                <button type="submit" class="btn-success "><b>Отправить</b></button>
                 <hr>
                 <div class="signin">
                     <p>Создавая аккаунт вы соглашаетесь с нашими <a href="#"><br>

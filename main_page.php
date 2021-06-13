@@ -55,12 +55,12 @@ include "header.php";
         <div class="icons">
             <div class="icon"><div ><a class="icon_text" href="manga.php">manga</a></div></div>
             <div class="icon"><div ><a class="icon_text" href="kaz_literature.php">kazakh literature</a></div></div>
-            <div class="icon"><div ><a class="icon_text" href="#">western literature</a></div></div>
+            <div class="icon"><div ><a class="icon_text" href="western.php">western literature</a></div></div>
         </div>
         <div class="icons">
-            <div class="icon"><div ><a class="icon_text" href="#">classic</a></div></div>
-            <div class="icon"><div ><a class="icon_text" href="#">educational books</a></div></div>
-            <div class="icon"><div ><a class="icon_text" href="#">books for children</a></div></div>
+            <div class="icon"><div ><a class="icon_text" href="classic.php">classic</a></div></div>
+            <div class="icon"><div ><a class="icon_text" href="education.php">educational books</a></div></div>
+            <div class="icon"><div ><a class="icon_text" href="kids.php">books for children</a></div></div>
         </div>
     </div>
 
